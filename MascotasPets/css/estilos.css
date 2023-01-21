@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier Prime', monospace;
+    /*background-color: #36505A;*/
+   box-sizing: 0;
+    
+}
+
+/** heeaderrrr**/
+.menu{
+    display: inline-flex;
+    background-color: #36505A;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.menu .menuderecho{
+    margin-left: 35%;
+    margin: 60px;
+
+}
+
+.menu section a  img{
+    width: 120px;
+    height: 50px;
+}
+
+
+
+.menu section a{
+text-decoration: none;
+margin-left: 80px;
+Color: white;
+
+}
+.menu section a:hover{
+   
+        -webkit-text-stroke: 1px #e42d52;
+       
+
+}
+
+.seccion {
+    background-color: #36505A;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    
+
+}
+
+.seccion button{
+    
+    width: 130px;
+    background-color: #eb4c72;
+    border-bottom: #eb4c72;
+    border-color: #8f2942;
+    border-radius: 10px;
+    margin-right: 35px;
+    margin-top: 10px;
+    color: aliceblue;
+   
+    
+
+}
+.seccion button:hover{
+    
+   
+    background-color: #f4e920;
+    border-bottom: #c0eb22;
+    border-color: #8f2942;
+    color: rgb(19, 88, 149);
+  
+
+}
+/**------- piePagina ------**/
+
+.pieimg {
+
+    background-color: #203138;
+    display: flex;
+    justify-content: center ;
+    
+}
+
+
+.pieimg img{
+    width: 150px;
+    height: 60px ;
+    margin: 50px;
+}
+
+.derechos{
+    width: 100%;
+    height: 100px;
+    background-color: #121c20;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+
+}
+
+/**------- container------**/
+.principal{
+    background-color: #067ead;
+    width: 100%;
+    
+    
+    
+}
+
+.container {
+    margin: auto;
+    background-color: #6acef5;
+    width: 800px;
+    padding: 20px;
+    
+   
+}
+
+
+.container ul li{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.container .slider{
+position: relative;
+width: 800px;
+height: 400px;
+background-color: antiquewhite;
+
+
+}
+.container .slider li{
+
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+
+
+}
+.container .slider li img{
+
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.container .slider li:first-child{
+    opacity: 1;
+
+
+}
+
+.menu1 {
+    text-align: center;
+    margin: 20px;
+    
+
+}
+.menu1 li{
+    display:inline-block;
+    text-align: center;
+
+}
+.menu1 li a{
+
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.slider li:target{
+    opacity:1;
+
+}
+/**-------slider 2-----**/
+.contenItems{
+
+    height: 300px;
+  overflow: hidden;
+}
+
+.item{
+
+    
+    height: 300px;
+    position: relative;
+}
+
+.tarjeta{
+    
+    height: 100%;
+
+}
+.flecha{
+
+    
+    
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+#unos{
+
+    background-color: #f4e920;
+}
+#dos{
+
+    background-color: #e42d52;
+}
+#tres{
+    background-color: #0fe95b;
+}
+
+/**-------ingreso-----**/
+
+
+#contenedor{
+    background-color:#36505A;
+    background-image: url(../img/inicio.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contenedor h2,h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.formulario{
+    
+    margin-left: 200px;
+    margin-top: -150px;
+    
+}
+label,input{
+    margin: 10px;
+}
+
+.pie-form{
+    display:inline-flexbox;
+}
+
+
+
