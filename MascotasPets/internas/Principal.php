@@ -1,9 +1,6 @@
-<?php
-    
-	require_once "./header.php";
 
 
-?>
+<?php include "./header.php";?>
 <body class="principal">
         <div class="container">
             <ul class="slider">
@@ -70,9 +67,4 @@
         </div>
     </div>     
 </body>
-<?php
-    
-	require_once "./footer.php";
-
-
-?>
+<?php include "./footer.php";?>

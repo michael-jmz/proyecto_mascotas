@@ -77,6 +77,12 @@ Color: white;
 
 }
 /**------- piePagina ------**/
+.contenedor .piePagina{
+
+	background-color: #1B1B1B;
+	display: flex;
+	justify-content: space-between;
+}
 
 .pieimg {
 
@@ -104,6 +110,7 @@ Color: white;
 
 
 }
+
 
 /**------- container------**/
 .principal{
@@ -273,6 +280,10 @@ label,input{
 .pie-form{
     display:inline-flexbox;
 }
+/*--------------------------------------*/
+/*             Footer                   */
+/*--------------------------------------*/
+
 
 
 
