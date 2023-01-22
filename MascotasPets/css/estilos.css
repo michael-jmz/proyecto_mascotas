@@ -3,7 +3,8 @@
     padding: 0;
     font-family: 'Courier Prime', monospace;
     /*background-color: #36505A;*/
-   box-sizing: 0;
+    box-sizing: 0;
+    
     
 }
 
@@ -27,9 +28,14 @@
     width: 120px;
     height: 50px;
 }
+.menu .perro_nav img{
+    height: 220px;
+    width: 450px;
+    margin-left: -150px;
+   
 
-
-
+   
+}
 .menu section a{
 text-decoration: none;
 margin-left: 80px;
@@ -117,7 +123,7 @@ Color: white;
 
 /**------- container------**/
 .principal{
-    background-color: #067ead;
+    background-color: #36505A;
     width: 100%;
     
     
@@ -126,7 +132,7 @@ Color: white;
 
 .container {
     margin: auto;
-    background-color: #6acef5;
+    background-color: #36505A;
     width: 800px;
     padding: 20px;
     
@@ -283,6 +289,10 @@ label,input{
 .pie-form{
     display:inline-flexbox;
 }
+
+
+
+
 
 
 

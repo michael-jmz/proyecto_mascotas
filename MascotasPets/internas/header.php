@@ -20,7 +20,12 @@
                 <a href="#">
                     <img src="../img/logo.png" alt="">
                 </a>
+
             </section>
+            <section class="perro_nav">
+                <img src="../img/perro_nav.png">
+            </section>
+
             <section class="Menuderecho">
                 <a href="Principal.php">Inicio</a>
                 <a href="#">Proyecto</a>
