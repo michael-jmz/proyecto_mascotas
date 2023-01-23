@@ -7,7 +7,12 @@
     
 }
 
+body{
+
+    background-color: #36505A;
+}
 /** heeaderrrr**/
+
 .menu{
     display: inline-flex;
     background-color: #36505A;
@@ -16,10 +21,12 @@
     align-items: center;
     justify-content: space-between;
     
+    
 }
 .menu .menuderecho{
     margin-left: 35%;
     margin: 60px;
+    
 
 }
 
@@ -114,7 +121,7 @@ Color: white;
 
 /**------- container------**/
 .principal{
-    background-color: #067ead;
+    background-color:#36505A;
     width: 100%;
     
     
@@ -123,7 +130,7 @@ Color: white;
 
 .container {
     margin: auto;
-    background-color: #6acef5;
+    background-color:#80c1db;
     width: 800px;
     padding: 20px;
     
@@ -199,15 +206,17 @@ background-color: antiquewhite;
 }
 /**-------slider 2-----**/
 .contenItems{
-
-    height: 300px;
-  overflow: hidden;
+    margin-top: 194px;
+    margin-left: 18.5px;
+    width: 1085px;
+    height: 350px;
+    overflow: hidden;
 }
 
 .item{
 
-    
-    height: 300px;
+    margin: 20px;
+    height: 350px;
     position: relative;
 }
 
@@ -284,6 +293,143 @@ label,input{
 /*             Footer                   */
 /*--------------------------------------*/
 
+/*----------------slider-------------------*/
+
+.fondoslider1{
+    
+    background-image: url(../img/slider.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+    width: 100%;
+    height: 80%;
+    margin-top: -35px;  
+}
+.contenedorslider{
+    
+    display: flex;
+    width: 100%;
+    height: 100%;
+   
+
+
+}
+.caja{
+
+  
+    background-image: url(../img/caja.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+    width: 400px ;
+    height: 125px;
+    margin-bottom: 15px;
+    margin-top:80px;
+
+}
+
+/**------- CARUSELL------**/
+
+.mascotas-adopcion .contenedor-principal{
+ display: flex;
+ align-items: center;
+ position: relative;
+
+}
+
+.contenedor-titulo-controles{
+display: flex;
+justify-content: space-between;
+align-items: end;
+
+}
+
+.contenedor-titulo-controles h3{
+    color: white;
+    font-size: 30px;
+
+}
+
+.contenedor-titulo-controles .indicadores button{
+    background: white;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+
+}
+
+.contenedor-titulo-controles .indicadores button:hover{
+    background: #8f2942;
+
+}
 
 
 
+
+
+.mascotas-adopcion .contenedor-principal .izq,.der{
+    position: absolute;
+    border: none;
+    background-color: rgb(19, 88, 149);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50%-25%);
+    line-height: 40px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+
+}
+
+.mascotas-adopcion .contenedor-principal .izq:hover,.mascotas-adopcion .contenedor-principal .der:hover{
+    background: rgb(0,0,0, .9);
+
+}
+
+.mascotas-adopcion .contenedor-principal .izq{
+    left: 0;
+
+}
+
+.mascotas-adopcion .contenedor-principal .der{
+    right: 0;
+}
+
+.mascotas-adopcion .contenedor-principal .contenedor-carusel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+.mascotas-adopcion .contenedor-principal .contenedor-carusel .carusel{
+
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.mascotas-adopcion .contenedor-principal .contenedor-carusel .carusel .mascota{
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, .3) ;
+
+}
+.contenedor-carusel .carusel .mascota img{
+    width: 100%;
+    vertical-align: top;
+
+    
+}
+
+.contenedor-carusel .carusel .mascota.hover{
+
+    transform: scale(1.2);
+    transform-origin:center ;
+
+}
