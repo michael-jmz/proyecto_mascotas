@@ -15,7 +15,7 @@
                         </div>
                         <div class="grupoinputLogin colorPerla">
                             <label for="">contraseña:</label>
-                            <input type="password" placeholder="Escribe una contraseña" name="password" required>
+                            <input type="password"  name="password" placeholder="Escribe una contraseña"  required>
                         </div>
                         <div class="grupoinput">
                         <input type="checkbox" id="sesion" name="sesion" value="">

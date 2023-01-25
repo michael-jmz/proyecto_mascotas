@@ -459,8 +459,7 @@ tomamos la etique label, pero no directamente sino el seudoselector after*/
     font-size: 1em;
     width:100%;
 }
-
-.grupoinputRegistrar input[type="text"],input[type="password"], input[type="mail"]{
+.formRegistro .grupoinputRegistrar input[type="text"],input[type="password"], input[type="mail"]{
     width: 85%;
     padding: 5px 5px;
     border-radius: 4px;
@@ -482,7 +481,7 @@ tomamos la etique label, pero no directamente sino el seudoselector after*/
   background-color: #0b232f; /* Green */
   border: none;
   color: white;
-  padding: 16px 16px;
+  padding: 16px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -503,7 +502,7 @@ tomamos la etique label, pero no directamente sino el seudoselector after*/
     background-color: white; /* Green */
     border: 2px solid #F26CA7;
     color:#0b232f;
-    padding: 16px 20px;
+    padding: 16px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

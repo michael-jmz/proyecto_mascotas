@@ -12,7 +12,7 @@
 			<div>
             <h2 class="colorPlomo">Crear una cuenta</h2>
 
-            <form  method="post" action="login.php">
+            <form  class="formRegistro" method="post" action="login.php">
 
 				<div class="grupoinputRegistrar colorPerla">
 					<label for="">Nombres</label> 
