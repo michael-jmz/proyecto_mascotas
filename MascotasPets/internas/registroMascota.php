@@ -7,37 +7,41 @@
     
 <body>
     <div id="contenedor">
-        <h2>Añadir mascota</h2>
+        <div>
+        <h2 class="colorPlomo">Añadir mascota</h2>
 
-        <form method="post" action="">
-        <div class="grupoinput">
-            <label for="nombres">Nombres</label> 
-            <input id="nombres"type="text" name="nombres" placeholder="Ingrese nombres" required>
-        </div>
-        <div class="grupoinput">
-            <label for="raza">Raza</label> 
-            <input id="raza"type="text" name="raza" placeholder="Ingrese sus raza"required>
-        </div>
-        
-        <div class="grupoinput">
-            <label for="edad">Edad </label> 
-            <input id="edad"type="text" name="edad" placeholder="Ingrese su edad"required>
-            
-            <label for="mascotas">Meses o años</label>
-            <select name="mascotas" id="mascotas">
-                <option value="años">Años</option>
-                <option value="meses">Meses</option>
+        <form  class="formAñadir" method="post" action="">
+        <div class="grupoinputRegistrar colorPerla">
+					<label for="">Nombre</label> 
+					<input id="nombres"type="text" name="nombres" placeholder="Ingrese nombre" required>
+		</div>
+        <div class="grupoinputRegistrar colorPerla">
+					<label for="">Raza</label> 
+					<input id="raza"type="text" name="raza" placeholder="Ingrese raza" required>
+		</div>
+        <div class="grupoinputRegistrar colorPerla">
+					<label for="">Edad</label> 
+					<input id="edad"type="text" name="edad" placeholder="Ingrese edad" required>
+
+                    <label for="mascotas">Meses o años</label>
+                    <select name="mascotas" id="mascotas">
+                    <option value="años">Años</option>
+                    <option value="meses">Meses</option>
             </select>
-        </div>
-        
 
-        <button class ="button"type="submit">Registrar</button>        
+		</div>
+        
+        <div class="inferior">
+				<button class ="btnRegistrar"type="submit">Registrar</button>
+				
+	    </div>
+             
     </form>
            
             
     </div> 
 
-    
+</div>    
 </body>
 <?php
     
