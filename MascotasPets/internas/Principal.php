@@ -49,7 +49,6 @@
             </div>           
                
         </div>
-<<<<<<< HEAD
 <div class="mascotas-adopcion">
     <div class="contenedor-titulo-controles">
         <h3>mascotas en adopcion</h3>
@@ -95,18 +94,6 @@
                         <img src="../img/wallpaperbetter.jpg" alt="">
                     </div>
                 </div>
-=======
-        
-        <div class="item" id="tres">
-            <div class="tarjeta">c</div>
-            <div class="flecha">
-                <a href="#dos">
-                    <i class="fa-solid fa-angle-left"></i>
-                </a>
-                <a href="#unos" >
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
->>>>>>> 5ddfeb7209be0daebe973856f81461bd9ff6c6de
             </div>
             <button role="button" class="der" id="der">
                 <i class="fa-solid fa-angle-right"></i>
@@ -117,9 +104,5 @@
 <script src="../scripts/main.js"></script>
 <script src="../scripts/slider.js"></script>
 </body>
-<<<<<<< HEAD
 
 <?php include "./footer.php";?>
-=======
-<?php include "./footer.php";?>
->>>>>>> 5ddfeb7209be0daebe973856f81461bd9ff6c6de
