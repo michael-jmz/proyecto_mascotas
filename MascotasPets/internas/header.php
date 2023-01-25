@@ -14,7 +14,7 @@
 </head>
 <header>
         <nav class="seccion">
-            <a href="ingreso.php"><button > Iniciar seccion </button></a>
+            <a href="ingreso.php"><button  class="btnIngresar"> Iniciar seccion </button></a>
             <a href="registro.php"><button>Registrarse</button></a>
         </nav>
         <nav class="menu">
