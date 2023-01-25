@@ -3,7 +3,8 @@
     padding: 0;
     font-family: 'Courier Prime', monospace;
     /*background-color: #36505A;*/
-   box-sizing: 0;
+    box-sizing: 0;
+    
     
 }
 
@@ -34,9 +35,14 @@ body{
     width: 120px;
     height: 50px;
 }
+.menu .perro_nav img{
+    height: 220px;
+    width: 450px;
+    margin-left: -150px;
+   
 
-
-
+   
+}
 .menu section a{
 text-decoration: none;
 margin-left: 80px;
@@ -83,7 +89,9 @@ Color: white;
   
 
 }
-/**------- piePagina ------**/
+/*--------------------------------------*/
+/*             Footer                   */
+/*--------------------------------------*/
 .contenedor .piePagina{
 
 	background-color: #1B1B1B;
@@ -119,9 +127,14 @@ Color: white;
 }
 
 
+
 /**------- container------**/
 .principal{
+<<<<<<< HEAD
     background-color:#36505A;
+=======
+    background-color: #36505A;
+>>>>>>> 5ddfeb7209be0daebe973856f81461bd9ff6c6de
     width: 100%;
     
     
@@ -130,7 +143,11 @@ Color: white;
 
 .container {
     margin: auto;
+<<<<<<< HEAD
     background-color:#80c1db;
+=======
+    background-color: #36505A;
+>>>>>>> 5ddfeb7209be0daebe973856f81461bd9ff6c6de
     width: 800px;
     padding: 20px;
     
@@ -289,9 +306,11 @@ label,input{
 .pie-form{
     display:inline-flexbox;
 }
-/*--------------------------------------*/
-/*             Footer                   */
-/*--------------------------------------*/
+
+
+
+
+
 
 /*----------------slider-------------------*/
 

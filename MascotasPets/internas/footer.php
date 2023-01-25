@@ -12,7 +12,5 @@
 	    </nav>
         </h6>
        
-        
-
 </footer>
 </html>
