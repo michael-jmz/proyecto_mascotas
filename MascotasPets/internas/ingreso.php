@@ -1,39 +1,38 @@
-<?php
-    
-	require_once "./header.php";
-
-
-?>
+<?php include "./header.php"; ?>
     
     <body>
+        
         <div id="contenedor">
-            <div class="formulario">
-                <h2>Bienvenido 
-                    <h3>Iniciar sesión</h3>
+            <div class="formulario ">
+                <br><br><br>
+                <h2 class="colorPlomo">Bienvenido 
+                    <h3 class="colorPlomo">Iniciar sesión</h3><br>
                 </h2>
                     <form id="loginform" method="post" action="">
-                        <div class="grupoinput">
-                            <label for="">Usuario</label>
-                            <br>
-                            <input type="text" name="usuario" placeholder="Usuario" required>
+                        <div class="grupoinputLogin colorPerla">
+                            <label for="">Usuario:</label>
+                            <input type="text" name="usuario" placeholder="Ej. james@dominio.com" required>
                         </div>
-                        <div class="grupoinput">
-                            <label for="">contraseña</label>
-                            <br>
-                            <input type="password" placeholder="Contraseña" name="password" required>
+                        <div class="grupoinputLogin colorPerla">
+                            <label for="">contraseña:</label>
+                            <input type="password"  name="password" placeholder="Escribe una contraseña"  required>
                         </div>
                         <div class="grupoinput">
                         <input type="checkbox" id="sesion" name="sesion" value="">
-                        <label for="sesion">Mantener la sesión iniciada</label><br>
+                        <label class="colorPerla" for="sesion">Mantener la sesión iniciada</label><br><br>
                         </div>
-                        <button type="submit" title="Ingresar" name="Ingresar">Ingresar</button>
+                        <div class="inferior">
+                            <button  class="btnLogin" type="submit" title="Ingresar" name="Ingresar">Iniciar sesión</button>
+                        </div>
                     </form>
-                    <div class="pie-form">
-                        <a href="#">¿Perdiste tu contraseña?</a>
-                        <a href="#">¿No tienes Cuenta? Registrate</a>
-                    </div>
+                    <br>
                     <div class="inferior">
-                        <a href="#">Volver</a>
+                        <a class="btnRecuperarPassword" href="#">¿Perdiste tu contraseña?</a>        
+                    </div><br>
+                
+                    <hr class="separador"></hr><br>
+                    <div class="inferior"> 
+                    <button  class="btnCrearCuenta" type="submit" title="Ingresar" name="Ingresar">Crear Cuenta</button>
                     </div>
             </div>
         </div>    

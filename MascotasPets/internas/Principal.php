@@ -1,71 +1,108 @@
-
-
 <?php include "./header.php";?>
+
+
+
 <body class="principal">
-        <div class="container">
-            <ul class="slider">
-                <li id="slider1">
-                    <img src="https://www.xtrafondos.com/wallpapers/resized/perro-en-el-pasto-5797.jpg?s=large" alt="">
-                </li>
-                <li id="slider2">
-                    <img src="https://i.pinimg.com/originals/e1/13/84/e11384d64e85deeffaa3c46f24a8534b.png" alt="">
-                </li>
-                <li id="slider3">
-                    <img src="https://www.elcomercio.com/wp-content/uploads/2021/12/perro.png" alt="">
-                </li>
-                
-            </ul>
-            <ul class="menu1">
-                    <li>
-                        <a href="#slider1">1</a>
-                    </li>
-                    <li>
-                        <a href="#slider2">2</a>
-                    </li>
-                    <li>
-                        <a href="#slider3">3</a>
-                    </li>
-            </ul>
-            
-        </div>
-    <div class="contenItems">   
-        <div class="item" id="unos">
-            <div class="tarjeta">A</div>
-            <div class="flecha">
-                <a href="#tres">
-                    <i class="fa-solid fa-angle-left"></i>
-                </a>
-                <a href="#dos">
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
-            </div>
 
-        </div>
-        <div class="item" id="dos">
-            <div class="tarjeta">B</div>
-            <div class="flecha">
-                <a href="#unos">
-                    <i class="fa-solid fa-angle-left"></i>
-                </a>
-                <a href="#tres">
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
-            </div>
+        <div class="contenedorslider">
+                <div >
+                    <ul>
+                        <li class="caja">
+                            a
+                        </li>
+                        <li class="caja">
+                            a
+                        </li>
+                        <li class="caja">
+                           a 
+                        </li>
+                    </ul>
+                </div>
+                <div class="fondoslider1">
+                    <div class="contenedor-principal1">
+                        <button role="button" id="izqSlider" class="izqSlider">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <div class="contenedor-carusel1">
+                            <div class="carusel1">
+                                <div class="mascotaslider">
+                                    <img src="../img/wallpaperbetter (1).jpg" alt="">
+                                </div>
+                                <div class="mascotaslider">
+                                    <img src="../img/wallpaperbetter (4).jpg" alt="">
+                                </div>
+                                <div class="mascotaslider">
+                                    <img src="../img/wallpaperbetter (3).jpg" alt="">
+                                </div>
+ 
+                                <div class="mascotaslider">
+                                    <img src="../img/wallpaperbetter (4).jpg" alt="">
+                                </div>
+                                
+                            </div>
+                         </div>
+                    <button role="button" class="derSlider" id="derSlider">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                 </div>
 
+            </div>           
+               
         </div>
-        
-        <div class="item" id="tres">
-            <div class="tarjeta">c</div>
-            <div class="flecha">
-                <a href="#dos">
-                    <i class="fa-solid fa-angle-left"></i>
-                </a>
-                <a href="#unos" >
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
+<div class="mascotas-adopcion">
+    <div class="contenedor-titulo-controles">
+        <h3>mascotas en adopcion</h3>
+        <div class="indicadores">
+            <button></button>
+            <button></button>
+        </div>
+        </div>
+        <div class="contenedor-principal">
+            <button role="button" id="izq" class="izq">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <div class="contenedor-carusel">
+                <div class="carusel">
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter (1).jpg" alt="">
+                    </div>
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter (4).jpg" alt="">
+                    </div>
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter (3).jpg" alt="">
+                    </div>
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter.jpg" alt="">
+                    </div>
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter.jpg" alt="">
+                    </div>
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter (1).jpg" alt="">
+                    </div>
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter (4).jpg" alt="">
+                    </div>
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter (3).jpg" alt="">
+                    </div>
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter.jpg" alt="">
+                    </div>
+                    <div class="mascota">
+                        <img src="../img/wallpaperbetter.jpg" alt="">
+                    </div>
+                </div>
             </div>
-
+            <button role="button" class="der" id="der">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
         </div>
-    </div>     
+
+</div>
+<script src="../scripts/main.js"></script>
+<script src="../scripts/slider.js"></script>
 </body>
+
 <?php include "./footer.php";?>

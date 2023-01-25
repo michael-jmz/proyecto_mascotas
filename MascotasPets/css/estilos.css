@@ -1,300 +1,554 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier Prime', monospace;
-    /*background-color: #36505A;*/
-    box-sizing: 0;
-    
-    
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier Prime", monospace;
+  /*background-color: #36505A;*/
+  box-sizing: 0;
 }
 
+body {
+  background-color: #36505a;
+}
 /** heeaderrrr**/
-.menu{
-    display: inline-flex;
-    background-color: #36505A;
-    height: 100px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-.menu .menuderecho{
-    margin-left: 35%;
-    margin: 60px;
 
+.menu {
+  display: inline-flex;
+  background-color: #36505a;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .menuderecho {
+  margin-left: 35%;
+  margin: 60px;
 }
 
-.menu section a  img{
-    width: 120px;
-    height: 50px;
+.menu section a img {
+  width: 120px;
+  height: 50px;
 }
-.menu .perro_nav img{
-    height: 220px;
-    width: 450px;
-    margin-left: -150px;
-   
-
-   
+.menu .perro_nav img {
+  height: 220px;
+  width: 450px;
+  margin-left: -150px;
 }
-.menu section a{
-text-decoration: none;
-margin-left: 80px;
-Color: white;
-
+.menu section a {
+  text-decoration: none;
+  margin-left: 80px;
+  color: white;
 }
-.menu section a:hover{
-   
-        -webkit-text-stroke: 1px #e42d52;
-       
-
+.menu section a:hover {
+  -webkit-text-stroke: 1px #e42d52;
 }
 
 .seccion {
-    background-color: #36505A;
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    
-
+  background-color: #36505a;
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
-.seccion button{
-    
-    width: 130px;
-    background-color: #eb4c72;
-    border-bottom: #eb4c72;
-    border-color: #8f2942;
-    border-radius: 10px;
-    margin-right: 35px;
-    margin-top: 10px;
-    color: aliceblue;
-   
-    
-
+.seccion button {
+  width: 130px;
+  background-color: #eb4c72;
+  border-bottom: #eb4c72;
+  border-color: #8f2942;
+  border-radius: 10px;
+  margin-right: 35px;
+  margin-top: 10px;
+  color: aliceblue;
 }
-.seccion button:hover{
-    
-   
-    background-color: #f4e920;
-    border-bottom: #c0eb22;
-    border-color: #8f2942;
-    color: rgb(19, 88, 149);
-  
-
+.seccion button:hover {
+  background-color: #f4e920;
+  border-bottom: #c0eb22;
+  border-color: #8f2942;
+  color: rgb(19, 88, 149);
 }
+
 /*--------------------------------------*/
 /*             Footer                   */
 /*--------------------------------------*/
-.contenedor .piePagina{
-
-	background-color: #1B1B1B;
-	display: flex;
-	justify-content: space-between;
+.contenedor .piePagina {
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pieimg {
-
-    background-color: #203138;
-    display: flex;
-    justify-content: center ;
-    
+  background-color: #203138;
+  display: flex;
+  justify-content: center;
 }
 
-
-.pieimg img{
-    width: 150px;
-    height: 60px ;
-    margin: 50px;
+.pieimg img {
+  width: 150px;
+  height: 60px;
+  margin: 50px;
 }
 
-.derechos{
-    width: 100%;
-    height: 100px;
-    background-color: #121c20;
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-
-
+.derechos {
+  width: 100%;
+  height: 100px;
+  background-color: #121c20;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
 
 /**------- container------**/
-.principal{
-    background-color: #36505A;
-    width: 100%;
-    
-    
-    
+.principal {
+  background-color: #36505a;
+  width: 100%;
 }
 
 .container {
-    margin: auto;
-    background-color: #36505A;
-    width: 800px;
-    padding: 20px;
-    
-   
+  margin: auto;
+  background-color: #80c1db;
+  width: 800px;
+  padding: 20px;
 }
 
-
-.container ul li{
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    
+.container ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.container .slider{
-position: relative;
-width: 800px;
-height: 400px;
-background-color: antiquewhite;
-
-
+.container .slider {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background-color: antiquewhite;
 }
-.container .slider li{
-
-    position: absolute;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-
-
+.container .slider li {
+  position: absolute;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
 }
-.container .slider li img{
-
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+.container .slider li img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
-.container .slider li:first-child{
-    opacity: 1;
-
-
+.container .slider li:first-child {
+  opacity: 1;
 }
 
 .menu1 {
-    text-align: center;
-    margin: 20px;
-    
-
+  text-align: center;
+  margin: 20px;
 }
-.menu1 li{
-    display:inline-block;
-    text-align: center;
-
+.menu1 li {
+  display: inline-block;
+  text-align: center;
 }
-.menu1 li a{
-
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: grey;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
+.menu1 li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
 }
 
-.slider li:target{
-    opacity:1;
-
+.slider li:target {
+  opacity: 1;
 }
 /**-------slider 2-----**/
-.contenItems{
-
-    height: 300px;
+.contenItems {
+  margin-top: 194px;
+  margin-left: 18.5px;
+  width: 1085px;
+  height: 350px;
   overflow: hidden;
 }
 
-.item{
-
-    
-    height: 300px;
-    position: relative;
+.item {
+  margin: 20px;
+  height: 350px;
+  position: relative;
 }
 
-.tarjeta{
-    
-    height: 100%;
-
+.tarjeta {
+  height: 100%;
 }
-.flecha{
-
-    
-    
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-
+.flecha {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-#unos{
-
-    background-color: #f4e920;
+#unos {
+  background-color: #f4e920;
 }
-#dos{
-
-    background-color: #e42d52;
+#dos {
+  background-color: #e42d52;
 }
-#tres{
-    background-color: #0fe95b;
+#tres {
+  background-color: #0fe95b;
 }
 
 /**-------ingreso-----**/
 
+#contenedor {
+  background-color: #36505a;
+  background-image: url(../img/inicio.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-#contenedor{
-    background-color:#36505A;
-    background-image: url(../img/inicio.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center center;
-    width: 100%;
-    height: 800px;
-    display: flex;
+#contenedor h2,
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.formulario {
+  margin-left: 200px;
+  margin-top: -150px;
+}
+label,
+input {
+  margin: 10px;
+}
+
+.pie-form {
+  display: inline-flexbox;
+}
+
+/*----------------slider-------------------*/
+
+.fondoslider1 {
+  background-image: url(../img/slider.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  height: 80%;
+  margin-top: -35px;
+}
+.contenedorslider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.caja {
+  background-image: url(../img/caja.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 400px;
+  height: 125px;
+  margin-bottom: 15px;
+  margin-top: 80px;
+}
+
+/**------- CARUSELL------**/
+
+.mascotas-adopcion .contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contenedor-titulo-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+  color: white;
+  font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+  background: white;
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover {
+  background: #8f2942;
+}
+
+.mascotas-adopcion .contenedor-principal .izq,
+.der {
+  position: absolute;
+  border: none;
+  background-color: rgb(19, 88, 149);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50%-25%);
+  line-height: 40px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.mascotas-adopcion .contenedor-principal .izq:hover,
+.mascotas-adopcion .contenedor-principal .der:hover {
+  background: rgb(0, 0, 0, 0.9);
+}
+
+.mascotas-adopcion .contenedor-principal .izq {
+  left: 0;
+}
+
+.mascotas-adopcion .contenedor-principal .der {
+  right: 0;
+}
+
+.mascotas-adopcion .contenedor-principal .contenedor-carusel {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.mascotas-adopcion .contenedor-principal .contenedor-carusel .carusel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.mascotas-adopcion .contenedor-principal .contenedor-carusel .carusel .mascota {
+  min-width: 30%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+.contenedor-carusel .carusel .mascota img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.contenedor-carusel .carusel .mascota.hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+/**------- slider------**/
+.contenedor-principal1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contenedor-principal1 .izqSlider,
+.contenedor-principal1 .derSlider {
+  position: absolute;
+  border: none;
+  background-color: rgb(19, 88, 149);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50%-25%);
+  line-height: 40px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.contenedor-principal1 .izqSlider:hover,
+.contenedor-principal1 .derSlider:hover {
+  background: rgb(0, 0, 0, 0.9);
+}
+
+.contenedor-principal1 .izqSlider {
+  left: 0;
+}
+
+.contenedor-principal1 .derSlider {
+  right: 0;
+}
+
+.contenedor-principal1 .contenedor-carusel1 {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.contenedor-principal1 .contenedor-carusel1 .carusel1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.contenedor-principal1 .contenedor-carusel1 .carusel1 .mascotaslider {
+  min-width: 100%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+.contenedor-carusel1 .carusel1 .mascotaslider img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.contenedor-carusel1 .carusel1 .mascotaslider.hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+/*--------------------------------------*/
+/*             Formulario inicio sesion */
+/*--------------------------------------*/
+.inferior {
+  text-align: center;
+}
+
+/*A todos las clases que tengan un input y dentro haya el atributo required
+tomamos la etique label, pero no directamente sino el seudoselector after*/
+.grupoinputLogin:has(input:required, select:required) label:after {
+  content: "*";
+  color: red;
+}
+.grupoinputLogin label {
+    font-size: 1em;
+  }
+.grupoinputLogin input[type="text"],input[type="password"] {
+    width: 90%;
+    padding: 15px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .btnRecuperarPassword {
+      text-decoration: none;
+      
+  }
+  /*crea una linea horzontal*/
+  .separador {
+    color: #768190;
+    size: 2px;
+  }
+
+/*--------------------------------------*/
+/*             Formulario Registrar */
+/*--------------------------------------*/
+.grupoinputRegistrar{
+    margin-left: 100px;
+}
+
+.grupoinputRegistrar:has(input:required, select:required) label:after {
+    content: "*";
+    color: red;
+
+}
+.grupoinputRegistrar label {
+    font-size: 1em;
+    width:100%;
+}
+.formRegistro .grupoinputRegistrar input[type="text"],input[type="password"], input[type="mail"]{
+    width: 85%;
+    padding: 5px 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.grupoinputRegistrar input[type="number"]{
+    padding: 5px 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+
+/*--------------------------------------*/
+/*             Botones Login            */
+/*--------------------------------------*/
+
+.btnLogin {
+  background-color: #0b232f; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: center;
+  
+}
+.btnLogin:hover {
+  background-color: #183543;
+  color: white;
+}
+.btnCrearCuenta{
+    min-width:30px;
+    background-color: white; /* Green */
+    border: 2px solid #F26CA7;
+    color:#0b232f;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    border-radius: 5px;
     justify-content: center;
-    align-items: center;
 
 }
-
-#contenedor h2,h3{
-    display: flex;
-    align-items: center;
+.btnCrearCuenta:hover {
+    background-color: #F26CA7;
+    color: white;
+}
+.btnRegistrar{
+    
+    background-color: #0b232f; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
     justify-content: center;
-    margin-top: 10px;
-    
+
 }
+.btnRegistrar:hover {
+    background-color: #183543;
+    color: white;
+  }
 
-.formulario{
-    
-    margin-left: 200px;
-    margin-top: -150px;
-    
+/*--------------------------------------*/
+/*             Personalizados           */
+/*--------------------------------------*/
+.colorBlanco {
+  color: #fff;
 }
-label,input{
-    margin: 10px;
+.colorPerla {
+  color: #0b232f;
 }
-
-.pie-form{
-    display:inline-flexbox;
+.colorPlomo {
+  color: #768190;
 }
-
-
-
-
-
-
-
-
-
