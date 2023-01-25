@@ -415,7 +415,7 @@ align-items: end;
 }
 
 .mascotas-adopcion .contenedor-principal .contenedor-carusel .carusel .mascota{
-    min-width: 20%;
+    min-width: 30%;
     transition: .3s ease all;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, .3) ;
 
@@ -433,3 +433,77 @@ align-items: end;
     transform-origin:center ;
 
 }
+
+/**------- slider------**/
+ .contenedor-principal1{
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+   }
+     
+   
+    .contenedor-principal1 .izqSlider,.contenedor-principal1 .derSlider{
+       position: absolute;
+       border: none;
+       background-color: rgb(19, 88, 149);
+       font-size: 40px;
+       height: 50%;
+       top: calc(50%-25%);
+       line-height: 40px;
+       width: 50px;
+       color: white;
+       cursor: pointer;
+       z-index: 500;
+       transition: .2s ease all;
+   
+   }
+   
+    .contenedor-principal1 .izqSlider:hover,.contenedor-principal1 .derSlider:hover{
+       background: rgb(0,0,0, .9);
+   
+   }
+   
+    .contenedor-principal1 .izqSlider{
+       left: 0;
+   
+   }
+   
+   .contenedor-principal1 .derSlider{
+       right: 0;
+   }
+   
+     .contenedor-principal1 .contenedor-carusel1{
+       width: 100%;
+       padding: 20px 0;
+       overflow:hidden;
+       scroll-behavior: smooth;
+       
+   }
+   
+    .contenedor-principal1 .contenedor-carusel1 .carusel1{
+   
+       display: flex;
+       flex-wrap: nowrap;
+   
+   }
+   
+    .contenedor-principal1 .contenedor-carusel1 .carusel1 .mascotaslider{
+       min-width: 100%;
+       transition: .3s ease all;
+       box-shadow: 5px 5px 10px rgb(0, 0, 0, .3) ;
+   
+   }
+   .contenedor-carusel1 .carusel1 .mascotaslider img{
+       width: 100%;
+       vertical-align: top;
+   
+       
+   }
+   
+   .contenedor-carusel1 .carusel1 .mascotaslider.hover{
+   
+       transform: scale(1.2);
+       transform-origin:center ;
+   
+   }
