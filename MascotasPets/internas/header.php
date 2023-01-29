@@ -31,9 +31,9 @@
             <section class="Menuderecho">
                 <a href="Principal.php">Inicio</a>
                 <a href="#">Proyecto</a>
-                <a href="#">Donaciones</a>
-                <a href="#">Adopta</a>
-                <a href="nosotros.php">Sobre nosotros</a>
+                <a href="postulaciones.php">Adopta</a>
+                <a href="listadoPostulacion.php">Registro Postulacion</a>
+                <a href="nosotros.php">Nosotros</a>
                 
             </section>
 		</nav>
