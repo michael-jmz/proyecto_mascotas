@@ -7,14 +7,15 @@
                 <br><br><br>
                 <h2 class="colorPlomo">Iniciar sesión</h2><br>
                 
-                    <form id="loginform" method="post" action="">
+                    <form id="loginform" method="post" action="../dll/_function.php">
                         <div class="grupoinputLogin colorPerla">
-                            <label for="">Usuario:</label>
-                            <input type="text" name="usuario" placeholder="Ej. james@dominio.com" required>
+                            <label for="usuario">Usuario:</label>
+                            <input class="form-control" id="usuario" type="text" name="usuario" placeholder="Ej. james@dominio.com" required>
                         </div>
                         <div class="grupoinputLogin colorPerla">
-                            <label for="">Contraseña:</label>
-                            <input type="password"  name="password" placeholder="Escribe una contraseña"  required>
+                            <label for="password">Contraseña:</label>
+                            <input class="form-control" id="password" type="password"  name="password" placeholder="Escribe una contraseña"  required>
+                            <input type="hidden" name="accion" value="acceso_user">
                         </div>
                         <div class="grupoinput">
                         <input type="checkbox" id="sesion" name="sesion" value="">

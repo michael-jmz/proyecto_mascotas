@@ -47,13 +47,11 @@ class class_mysqli{
 		}
 		return $this->Consulta_ID;
 	}
+	/*retorna de campos de la consulta numero de filas*/
 	function numcampos(){
 		return mysqli_num_fields($this->Consulta_ID);
 	}
-	/*retorna de campos de la consulta numero de filas*/
-	function numregistros(){
-		return mysqli_num_rows($this->Consulta_ID);
-	}
+	
 	function verconsulta(){
 		echo "<table class='table' border=1>";
 		echo "<tr>";
@@ -168,5 +166,5 @@ class class_mysqli{
 		}
 	}
 }
-
+	
 ?>
