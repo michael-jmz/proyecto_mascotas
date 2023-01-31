@@ -1,4 +1,5 @@
 <?php
+ 
 class class_mysqli{
 	/*variables de conexoion*/
 	var $BaseDatos;
@@ -164,6 +165,35 @@ class class_mysqli{
 			}
 			return $row;
 		}
+	}
+	function verListaUsuarios(){
+		echo "<table class='table table-striped table-dark' id='table_id'>";
+		echo "<thead>";
+		echo "<tr>";
+		//la primera fila de nuestra tabla
+		for ($i=0; $i< $this->numCampos(); $i++){
+			echo "<th>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</th>";
+		}
+		echo "<th>Acciones</th>";
+		echo "</tr>";
+		echo "</thead>";
+		//sacamos todo el registro
+		echo "<tbody>";
+		while ($row=mysqli_fetch_array($this->Consulta_ID)){
+			echo "<tr>";
+			for ($i=0; $i<$this->numCampos(); $i++){
+				echo "<td>".$row[$i]."</td>";
+			}
+			echo "<td>";
+			echo "<a class='btn btn-warning' href='editar_user.php?idUser=$row[0]'><i class='fa fa-edit'></i></a>";
+			echo "&nbsp;";
+			echo "<a class='btn btn-danger' href='eliminar_user.php?idUser=$row[0]'><i class='fa fa-trash'></i></a>";
+			echo "</td>";
+			
+			echo "</tr>";
+			}
+		echo "</tbody>";
+		echo "</table>";
 	}
 }
 	

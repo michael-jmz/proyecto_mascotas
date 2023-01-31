@@ -69,15 +69,15 @@ function acceso_user() {
     //$resultado=mysqli_query($conexion, $consulta);
     //$filas=mysqli_num_rows($resultado);
     $resSQL=$miConexion->consulta ($sentencia);
-    if ($resSQL==""){
+    if ($resSQL=""){
         echo "problemas de ejecucion";
         header('Location: ../internas/ingreso.php');
         session_destroy();
     }else{
         echo "Acceso Correcto";
         echo '<script> alert ("Postulación exitosa...");</script>';
-        //echo "<script> location.href=''</script>";
-        header('Location: ../internas/postulaciones.php');
+        //echo "<script> location.href='../views/lista_user.php'</script>";
+        header('Location: ../views/lista_users.php');
 
     }
 }
