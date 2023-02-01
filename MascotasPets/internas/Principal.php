@@ -106,3 +106,7 @@
 </body>
 
 <?php include "./footer.php";?>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8ae209c4c170bd7d12ca57068cef816cbea75cc7
