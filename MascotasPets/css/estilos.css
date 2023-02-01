@@ -541,6 +541,34 @@ tomamos la etique label, pero no directamente sino el seudoselector after*/
   }
 
 /*--------------------------------------*/
+/*             Formulario AñadirMascota*/
+/*--------------------------------------*/
+.grupoinputRegistrar{
+  margin-left: 100px;
+}
+
+.grupoinputRegistrar:has(input:required, select:required) label:after {
+  content: "*";
+  color: red;
+
+}
+.grupoinputRegistrar label {
+  font-size: 1em;
+  width:100%;
+}
+.formAñadir .grupoinputRegistrar input[type="text"],input[type="password"], input[type="mail"]{
+  width: 85%;
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.grupoinputAñadir input[type="number"]{
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/*--------------------------------------*/
 /*             Personalizados           */
 /*--------------------------------------*/
 .colorBlanco {
