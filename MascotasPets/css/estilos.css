@@ -7,17 +7,18 @@
 }
 
 body {
-  background-color: #36505a;
+  background-color: #161818;
 }
 /** heeaderrrr**/
 
 .menu {
   display: inline-flex;
-  background-color: #36505a;
+  background-color: #161818;
   height: 100px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  
 }
 .menu .menuderecho {
   margin-left: 35%;
@@ -43,7 +44,7 @@ body {
 }
 
 .seccion {
-  background-color: #36505a;
+  background-color: #161818;
   width: 100%;
   display: flex;
   justify-content: end;
@@ -51,7 +52,6 @@ body {
 
 .seccion button {
   width: 130px;
-  padding: 5px 5px;
   background-color: #eb4c72;
   border-bottom: #eb4c72;
   border-color: #8f2942;
@@ -66,14 +66,6 @@ body {
   border-color: #8f2942;
   color: rgb(19, 88, 149);
 }
-/*--------------------------------------*/
-/*             Nosotros                   */
-/*--------------------------------------*/
-#columnas{
-    column-count:2 ;
-    color:white;
-}
-
 
 /*--------------------------------------*/
 /*             Footer                   */
@@ -110,6 +102,28 @@ body {
 .principal {
   background-color: #36505a;
   width: 100%;
+  width: 100%;
+    background-color: #ffffff;
+    background-image: url("../img/fondo-mascota.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.caja h4{
+  margin-left: 150px ;
+  margin-right: 100px;
+  justify-content: center;
+
+
+
+}
+.caja h5{
+  margin-left: 150px ;
+  margin-right: 100px;
+  font-size: 80px;
+  justify-content: center;
+
+
+
 }
 
 .container {
@@ -130,7 +144,6 @@ body {
   width: 800px;
   height: 400px;
   background-color: antiquewhite;
-  
 }
 .container .slider li {
   position: absolute;
@@ -253,7 +266,8 @@ input {
   background-position: center center;
   width: 100%;
   height: 80%;
-  margin-top: -35px;
+  margin-top: -20px;
+  border-radius: 50px;
 }
 .contenedorslider {
   display: flex;
@@ -307,7 +321,7 @@ input {
 .der {
   position: absolute;
   border: none;
-  background-color: rgb(19, 88, 149);
+  background-color: rgb(64, 70, 76);
   font-size: 40px;
   height: 50%;
   top: calc(50%-25%);
@@ -360,7 +374,6 @@ input {
 }
 
 /**------- slider------**/
-<<<<<<< HEAD
  .contenedor-principal1{
     display: flex;
     align-items: center;
@@ -372,7 +385,7 @@ input {
     .contenedor-principal1 .izqSlider,.contenedor-principal1 .derSlider{
        position: absolute;
        border: none;
-       background-color: rgb(19, 88, 149);
+       background-color: rgb(29, 36, 40);
        font-size: 40px;
        height: 50%;
        top: calc(50%-25%);
@@ -436,6 +449,11 @@ input {
    /*--------------------mascotas--------------------*/
    .principal-mascota{
     width: 100%;
+    background-color: #e1e9eb;
+    background-image: url("../img/fondo-mascota.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
 
    }
 
@@ -456,21 +474,17 @@ input {
         
 
    }
-   .principal-mascota .contenedor-mascota .modelo-mascota{
-        
-       
-
-   }
+   
    .mascotas-adopcion .contenedor-principal .contenedor-carusel .carusel .modelo-mascota{
-    min-width: 33%;
-    background-image: url("../img/modelo-mascota.png");
+    min-width: 20%;
+    
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
         margin: 30px;
         padding: 20px;
-    transition: .3s ease all;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, .3) ;
+       transition: .3s ease all;
+    
     
 
 }
@@ -497,306 +511,25 @@ input {
   padding: 20px;
    
     justify-content: center;
-=======
-.contenedor-principal1 {
-  display: flex;
-  align-items: center;
-  position: relative;
+}
+.contenedor-titulo-controles h3{
+  margin: 0 auto;
+
 }
 
-.contenedor-principal1 .izqSlider,
-.contenedor-principal1 .derSlider {
-  position: absolute;
-  border: none;
-  background-color: rgb(19, 88, 149);
-  font-size: 40px;
-  height: 50%;
-  top: calc(50%-25%);
-  line-height: 40px;
-  width: 50px;
+
+.mascota .boton{
+  background-color: #1b1b1b;
+  font-size: 10px;
   color: white;
-  cursor: pointer;
-  z-index: 500;
-  transition: 0.2s ease all;
-}
-
-.contenedor-principal1 .izqSlider:hover,
-.contenedor-principal1 .derSlider:hover {
-  background: rgb(0, 0, 0, 0.9);
-}
-
-.contenedor-principal1 .izqSlider {
-  left: 0;
-}
-
-.contenedor-principal1 .derSlider {
-  right: 0;
-}
-
-.contenedor-principal1 .contenedor-carusel1 {
-  width: 100%;
-  padding: 20px 0;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-.contenedor-principal1 .contenedor-carusel1 .carusel1 {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.contenedor-principal1 .contenedor-carusel1 .carusel1 .mascotaslider {
-  min-width: 100%;
-  transition: 0.3s ease all;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
-}
-.contenedor-carusel1 .carusel1 .mascotaslider img {
-  width: 100%;
-  vertical-align: top;
-}
-
-.contenedor-carusel1 .carusel1 .mascotaslider.hover {
-  transform: scale(1.2);
-  transform-origin: center;
-}
-/*--------------------------------------*/
-/*             Formulario inicio sesion */
-/*--------------------------------------*/
-.inferior {
-  text-align: center;
-}
-
-/*A todos las clases que tengan un input y dentro haya el atributo required
-tomamos la etique label, pero no directamente sino el seudoselector after*/
-.grupoinputLogin:has(input:required, select:required) label:after {
-  content: "*";
-  color: red;
-}
-.grupoinputLogin label {
-    font-size: 1em;
-  }
-.grupoinputLogin input[type="text"],input[type="password"] {
-    width: 90%;
-    padding: 15px 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  .btnRecuperarPassword {
-      text-decoration: none;
-      
-  }
-  /*crea una linea horzontal*/
-  .separador {
-    color: #768190;
-    size: 2px;
-  }
-
-/*--------------------------------------*/
-/*             Formulario Registrar */
-/*--------------------------------------*/
-.grupoinputRegistrar{
-    margin-left: 100px;
-}
-
-.grupoinputRegistrar:has(input:required, select:required) label:after {
-    content: "*";
-    color: red;
-
-}
-.grupoinputRegistrar label {
-    font-size: 1em;
-    width:100%;
-}
-.formRegistro .grupoinputRegistrar input[type="text"],input[type="password"], input[type="mail"]{
-    width: 85%;
-    padding: 5px 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-.grupoinputRegistrar input[type="number"]{
-    padding: 5px 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-/*--------------------------------------*/
-/*             Formulario Añadir Mascotas */
-/*--------------------------------------*/
-.grupoinputRegistrar{
-  margin-left: 100px;
-}
-
-.grupoinputRegistrar:has(input:required, select:required) label:after {
-  content: "*";
-  color: red;
-
-}
-.grupoinputRegistrar label {
-  font-size: 1em;
-  width:100%;
-}
-.formAñadir .grupoinputRegistrar input[type="text"]{
-  width: 85%;
-  padding: 5px 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-.grupoinputRegistrar input[type="number"]{
-  padding: 5px 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-/*--------------------------------------*/
-/*             Formulario Añadir Mascotas */
-/*--------------------------------------*/
-.grupoinputRegistrar{
-  margin-left: 100px;
-}
-
-.grupoinputRegistrar:has(input:required, select:required) label:after {
-  content: "*";
-  color: red;
-
-}
-.grupoinputRegistrar label {
-  font-size: 1em;
-  width:100%;
-}
-.formAñadir .grupoinputRegistrar input[type="text"]{
-  width: 85%;
-  padding: 5px 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-.grupoinputRegistrar input[type="number"]{
-  padding: 5px 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-/*--------------------------------------*/
-/*             Formulario Postular     */
-/*--------------------------------------*/
-
-.grupoinput input[type="text"],input[type="password"], input[type="mail"]{
-  width: 85%;
-  padding: 5px 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-
-}
-.grupoinput:has(input:required, select:required) label:after {
-  content: "*";
-  color: red;
-
-}
-
-/*--------------------------------------*/
-/*             Botones Login            */
-/*--------------------------------------*/
-
-.btnLogin {
-  background-color: #0b232f; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 5px;
-  justify-content: center;
+  margin-left: 150px;
   
-}
-.btnLogin:hover {
-  background-color: #183543;
-  color: white;
-}
-.btnCrearCuenta{
-    min-width:30px;
-    background-color: white; /* Green */
-    border: 2px solid #F26CA7;
-    color:#0b232f;
-    padding: 16px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    border-radius: 5px;
-    justify-content: center;
+  
+
 
 }
-.btnCrearCuenta:hover {
-    background-color: #F26CA7;
-    color: white;
-}
-.btnRegistrar{
-    
-    background-color: #0b232f; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 5px;
-    justify-content: center;
 
-}
-.btnRegistrar:hover {
-    background-color: #183543;
-    color: white;
-  }
 
-/*--------------------------------------*/
-/*             Formulario AñadirMascota*/
-/*--------------------------------------*/
-.grupoinputRegistrar{
-  margin-left: 100px;
-}
 
-.grupoinputRegistrar:has(input:required, select:required) label:after {
-  content: "*";
-  color: red;
 
-}
-.grupoinputRegistrar label {
-  font-size: 1em;
-  width:100%;
-}
-.formAñadir .grupoinputRegistrar input[type="text"],input[type="password"], input[type="mail"]{
-  width: 85%;
-  padding: 5px 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-.grupoinputAñadir input[type="number"]{
-  padding: 5px 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-/*--------------------------------------*/
-/*             Personalizados           */
-/*--------------------------------------*/
-.colorBlanco {
-  color: #fff;
-}
-.colorPerla {
-  color: #0b232f;
-}
-.colorPlomo {
-  color: #768190;
->>>>>>> 8ae209c4c170bd7d12ca57068cef816cbea75cc7
-}
+ /*--------------------mascotas--------------------*/
