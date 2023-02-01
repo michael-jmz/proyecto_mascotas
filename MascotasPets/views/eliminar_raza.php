@@ -22,16 +22,16 @@ include ("../includes/menu_interno.php") ;
     <div class="row">
     <div class="col-sm-6 offset-sm-3">
     <div class="alert alert-danger text-center">
-    <p>¿Esta seguro de eliminar registro?</p>
+    <p>¿Esta seguro de eliminar Raza?</p>
     </div>
 
     <div class="row">
         <div class="col-sm-6">
             <form action="../dll/_function.php" method="POST">
-                <input type="hidden" name="accion" value="eliminar_registro">
-                <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+                <input type="hidden" name="accion" value="eliminar_raza">
+                <input type="hidden" name="idRaza" value="<?php echo $_GET['idRaza']; ?>">
                 <input type="submit" name="" value="Eliminar" class= " btn btn-danger">
-                <a href="lista_users.php" class="btn btn-success">Cancelar</a>
+                <a href="lista_razas.php" class="btn btn-success">Cancelar</a>
 
                                
         </div>

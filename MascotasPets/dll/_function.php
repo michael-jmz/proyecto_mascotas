@@ -22,34 +22,49 @@ if (isset($_POST['accion'])){
             acceso_user();
             break;
 
+            case 'editar_mascota':
+                editar_mascota();
+                break;
+
+            case 'eliminar_mascota':
+                eliminar_mascota();
+                break;
+            
+            case 'editar_raza':
+                editar_raza();
+                break;
+
+            case 'eliminar_raza':
+                eliminar_raza();
+                break;
+
 
         }
 
     }
 
     function editar_registro() {
-        $conexion=mysqli_connect("localhost","root","","r_user");
+        global $miConexion;
         extract($_POST);
-        $consulta="UPDATE user SET nombre = '$nombre', correo = '$correo', telefono = '$telefono',
-        password ='$password' WHERE id = '$id' ";
-
-        mysqli_query($conexion, $consulta);
-
-
-        header('Location: ../views/user.php');
+        $sentencia= "UPDATE personal SET nombre = '$nombre', 
+                                         apellido = '$apellido', 
+                                         correo = '$correo', 
+                                         direccion = '$direccion', 
+                                         cedula = '$cedula',
+                                         rol_id = '$rol'
+                                         WHERE persona_id = '$id'";
+        $miConexion->consulta($sentencia);
+        header('Location: ../views/lista_users.php');
 
 }
 
 function eliminar_registro() {
-    $conexion=mysqli_connect("localhost","root","","r_user");
+    global $miConexion;
     extract($_POST);
     $id= $_POST['id'];
-    $consulta= "DELETE FROM user WHERE id= $id";
-
-    mysqli_query($conexion, $consulta);
-
-
-    header('Location: ../views/user.php');
+    $sentencia= "DELETE FROM personal WHERE persona_id= $id";
+    $miConexion->consulta($sentencia);
+    header('Location: ../views/lista_users.php');
 
 }
 
@@ -61,10 +76,11 @@ function acceso_user() {
         $password=$_POST['password'];
         session_start();
         $_SESSION['correo']=$usuario;
+        
 
     //$conexion=mysqli_connect("localhost","root","","r_user");
     
-    $sentencia= "SELECT correo, password FROM personal WHERE correo='$usuario' AND password='$password'";
+    $sentencia= "SELECT correo, nombre password FROM personal WHERE correo='$usuario' AND password='$password'";
     $miConexion->consulta($sentencia);
     //$resultado=mysqli_query($conexion, $consulta);
     //$filas=mysqli_num_rows($resultado);
@@ -73,13 +89,55 @@ function acceso_user() {
         echo "problemas de ejecucion";
         header('Location: ../internas/ingreso.php');
         session_destroy();
-    }else{
-        echo "Acceso Correcto";
-        echo '<script> alert ("Postulación exitosa...");</script>';
+    }else{ 
+       // echo '<script> alert ("Postulación exitosa...");</script>';
         //echo "<script> location.href='../views/lista_user.php'</script>";
         header('Location: ../views/lista_users.php');
 
     }
 }
 }
+//============================ CRUD MASCOTAS ==================================
+ function editar_mascota(){
+    global $miConexion;
+        extract($_POST);
+        $sentencia= "UPDATE mascotas SET nombre = '$nombre', 
+                                         edad = '$edad', 
+                                         estado_mascota = '$estado', 
+                                         raza_id = '$raza'
+                                         WHERE mascota_id = '$idMascota'";
+        $miConexion->consulta($sentencia);
+        header('Location: ../views/lista_mascotas.php');
+
+ }
+ function eliminar_mascota(){
+    global $miConexion;
+    extract($_POST);
+    $id= $_POST['idMascota'];
+    $sentencia= "DELETE FROM mascotas WHERE mascota_id= $id";
+    $miConexion->consulta($sentencia);
+    header('Location: ../views/lista_mascotas.php');
+
+ }
+
+ //============================ CRUD RAZAS ==================================
+
+ function editar_raza(){
+    global $miConexion;
+        extract($_POST);
+        $sentencia= "UPDATE razas SET tipo = '$nombre'
+                                         WHERE raza_id = '$idRaza'";
+        $miConexion->consulta($sentencia);
+        header('Location: ../views/lista_razas.php');
+
+ }
+ function eliminar_raza(){
+    global $miConexion;
+    extract($_POST);
+    $id= $_POST['idRaza'];
+    $sentencia= "DELETE FROM razas WHERE raza_id= $id";
+    $miConexion->consulta($sentencia);
+    header('Location: ../views/lista_razas.php');
+ }
+
 ?>
