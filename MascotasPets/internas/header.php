@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
     <script src="https://kit.fontawesome.com/d0c9f07d74.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="icon" href="../img/logo.png" sizes="32x32" />
+    <title>Pets</title>
+
     
 </head>
 <header>
         <nav class="seccion">
             <a href="ingreso.php"><button > Iniciar seccion </button></a>
-            <a href="registro.php"><button>registrarse</button></a>
+            <a href="registro.php"><button>Registrarse</button></a>
         </nav>
         <nav class="menu">
             <section>
@@ -31,6 +33,8 @@
                 <a href="#">Proyecto</a>
                 <a href="#">Donaciones</a>
                 <a href="#">Adopta</a>
+                <a href="nosotros.php">Sobre nosotros</a>
+                
             </section>
 		</nav>
 
