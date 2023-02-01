@@ -51,6 +51,7 @@ body {
 
 .seccion button {
   width: 130px;
+  padding: 5px 5px;
   background-color: #eb4c72;
   border-bottom: #eb4c72;
   border-color: #8f2942;
@@ -65,6 +66,14 @@ body {
   border-color: #8f2942;
   color: rgb(19, 88, 149);
 }
+/*--------------------------------------*/
+/*             Nosotros                   */
+/*--------------------------------------*/
+#columnas{
+    column-count:2 ;
+    color:white;
+}
+
 
 /*--------------------------------------*/
 /*             Footer                   */
@@ -121,6 +130,7 @@ body {
   width: 800px;
   height: 400px;
   background-color: antiquewhite;
+  
 }
 .container .slider li {
   position: absolute;
@@ -609,7 +619,78 @@ tomamos la etique label, pero no directamente sino el seudoselector after*/
     border: 1px solid #ccc;
 }
 
+/*--------------------------------------*/
+/*             Formulario Añadir Mascotas */
+/*--------------------------------------*/
+.grupoinputRegistrar{
+  margin-left: 100px;
+}
 
+.grupoinputRegistrar:has(input:required, select:required) label:after {
+  content: "*";
+  color: red;
+
+}
+.grupoinputRegistrar label {
+  font-size: 1em;
+  width:100%;
+}
+.formAñadir .grupoinputRegistrar input[type="text"]{
+  width: 85%;
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.grupoinputRegistrar input[type="number"]{
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/*--------------------------------------*/
+/*             Formulario Añadir Mascotas */
+/*--------------------------------------*/
+.grupoinputRegistrar{
+  margin-left: 100px;
+}
+
+.grupoinputRegistrar:has(input:required, select:required) label:after {
+  content: "*";
+  color: red;
+
+}
+.grupoinputRegistrar label {
+  font-size: 1em;
+  width:100%;
+}
+.formAñadir .grupoinputRegistrar input[type="text"]{
+  width: 85%;
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.grupoinputRegistrar input[type="number"]{
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/*--------------------------------------*/
+/*             Formulario Postular     */
+/*--------------------------------------*/
+
+.grupoinput input[type="text"],input[type="password"], input[type="mail"]{
+  width: 85%;
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+
+}
+.grupoinput:has(input:required, select:required) label:after {
+  content: "*";
+  color: red;
+
+}
 
 /*--------------------------------------*/
 /*             Botones Login            */
@@ -677,6 +758,34 @@ tomamos la etique label, pero no directamente sino el seudoselector after*/
     background-color: #183543;
     color: white;
   }
+
+/*--------------------------------------*/
+/*             Formulario AñadirMascota*/
+/*--------------------------------------*/
+.grupoinputRegistrar{
+  margin-left: 100px;
+}
+
+.grupoinputRegistrar:has(input:required, select:required) label:after {
+  content: "*";
+  color: red;
+
+}
+.grupoinputRegistrar label {
+  font-size: 1em;
+  width:100%;
+}
+.formAñadir .grupoinputRegistrar input[type="text"],input[type="password"], input[type="mail"]{
+  width: 85%;
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.grupoinputAñadir input[type="number"]{
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
 
 /*--------------------------------------*/
 /*             Personalizados           */

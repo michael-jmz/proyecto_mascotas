@@ -3,7 +3,7 @@
 ?>
     
 <body>
-    <div class =contenedor>
+    <div class ="contenedor" id="columnas">
     <section class="imgNosotros">
 		<img src="#" title="">
 	</section>
@@ -15,7 +15,7 @@
             y posteriormente reformada a fundación el 2 de marzo de 2005 con Acuerdo Ministerial # 4883, 
             como una entidad apolítica, arreligiosa, con personería jurídica, de derecho privado y sin fines de lucro, 
             fundada para la defensa y protección de los animales. 
-            Actualmente PAE se encuentra regulada por el Ministerio de Salud Pública.
+            Actualmente PAE se encuentra regulada por el Ministerio de Salud Pública que esta organiza por diferentes.
             </p>
         </section>
 
