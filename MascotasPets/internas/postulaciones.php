@@ -9,43 +9,43 @@
 ?>
     
 <body>
-<div class="contenedor">
+<div id="contenedor">
+	<div>
 
-	<main>
-		<h2>Formulario de postulaciones</h2>
+		<h2 class="colorPerla">Formulario de postulaciones</h2> <br>
 		<form method="post" action="guardarPostulacion.php">
-			<div class="grupoinput">
+			<div class="grupoinput colorPerla">
 				<label for="nombres">Nombres</label> 
 				<br>
 				<input id="nombres"type="text" name="nombres" placeholder="Ingrese nombres" required>
 			</div>
-			<div class="grupoinput">
+			<div class="grupoinput colorPerla">
 				<label for="apellidos">Apellidos</label> 
 				<br>
 				<input id="apellidos"type="text" name="apellidos" placeholder="Ingrese sus apellidos"required>
 			</div>
-			<div class="grupoinput">
+			<div class="grupoinput colorPerla">
 				<label for="correo">Correo</label> 
 				<br>
 				<input id="correo"type="mail" name="correo" placeholder="Ingrese su correo"required>
 			</div>
-			<div class="grupoinput">
+			<div class="grupoinput colorPerla">
 				<label for="password">Constraseña</label> 
 				<br>
 				<input id="password"type="password" name="password" placeholder="Ingrese su constraseña"required>
 			</div>
 			
-			<div class="grupoinput">
+			<div class="grupoinput colorPerla">
 				<label for="direccion">Dirección</label>
 				<br> 
 				<input id="direccion"type="text" name="direccion" placeholder="Ingrese su direccion"required>
 			</div>
-			<div class="grupoinput">
+			<div class="grupoinput colorPerla">
 				<label for="cedula">Cédula</label> 
 				<br>
 				<input id="cedula"type="text" name="cedula" placeholder="Ingrese su cedula"required>
 			</div>
-			<div class="grupoinput">
+			<div class="grupoinput colorPerla">
 				<label for="mascotas">Escoge la mascota</label>
 				<select name="mascotas" id="mascotas" required>
         			<?php
@@ -54,12 +54,14 @@
         			?>
       			</select>
 				
+			</div><br>
+
+			<div class="inferior">
+				<button class ="btnRegistrar" type="submit"> Postular Adopción</button>
 			</div>
-			<button class ="button"type="submit"> Postular Adopción</button>
 			
 		</form>
-
-	</main>
+		</div>
 </div>
 </body>
 <?php

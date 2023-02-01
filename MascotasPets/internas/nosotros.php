@@ -3,7 +3,7 @@
 ?>
     
 <body>
-    <div class =contenedor>
+    <div class ="contenedor" id="columnas">
     <section class="imgNosotros">
 		<img src="#" title="">
 	</section>

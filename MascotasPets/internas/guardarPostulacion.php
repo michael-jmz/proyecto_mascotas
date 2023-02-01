@@ -17,6 +17,7 @@ include ("../dll/class_mysql.php"); // incluidos el archivo de conexion para pod
 //extract ($_POST);   //obtiene todo
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
+
 $nombre=$_POST['nombres'];//debemos extraer una a uno por seguridad
 $apellido=$_POST['apellidos'];
 $correo=$_POST['correo'];
