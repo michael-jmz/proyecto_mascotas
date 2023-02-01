@@ -28,10 +28,10 @@ error_reporting(0);
     $miConexion= new class_mysqli();
     $miConexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
 
-    $id= $_GET['id'];
-    $sentencia= "SELECT * FROM personal WHERE persona_id= $id";
+    $idMascota= $_GET['idMascota'];
+    $sentencia= "SELECT * FROM mascotas WHERE mascota_id= $idMascota";
     $resultado=$miConexion->consulta($sentencia);
-    $usuario = mysqli_fetch_assoc($resultado);
+    $mascotas = mysqli_fetch_assoc($resultado);
 
     ?>
 
@@ -45,42 +45,34 @@ error_reporting(0);
                     
                             <br>
                             <br>
-                            <h3 class="text-center">Editar usuario</h3>
+                            <h3 class="text-center">Editar Mascota</h3>
                             <div class="form-group">
                                 <label for="nombre" class="form-label">Nombre *</label>
-                                <input type="text"  id="nombre" name="nombre" class="form-control" value="<?php echo $usuario['nombre'];?>"required>
+                                <input type="text"  id="nombre" name="nombre" class="form-control" value="<?php echo $mascotas['nombre'];?>"required>
                             </div>
 
                             <div class="form-group">
-                                <label for="apellido" class="form-label">Apellidos*</label>
-                                <input type="text"  id="apellido" name="apellido" class="form-control" value="<?php echo $usuario['apellido'];?>"required>
+                                <label for="edad" class="form-label">Edad*</label>
+                                <input type="text"  id="edad" name="edad" class="form-control" value="<?php echo $mascotas['edad'];?>"required>
                             </div>
                             <div class="form-group">
-                                <label for="username">Correo:</label><br>
-                                <input type="email" name="correo" id="correo" class="form-control" placeholder="" value="<?php echo $usuario['correo'];?>">
+                                <label for="esatdo">Estado de mascota:</label><br>
+                                <input type="number" name="estado" id="esatdo" class="form-control" placeholder="" value="<?php echo $mascotas['estado_mascota'];?>">
                             </div>
                             <div class="form-group">
-                                  <label for="direccion" class="form-label">Dirección *</label>
-                                <input type="text"  id="direccion" name="direccion" class="form-control" value="<?php echo $usuario['direccion'];?>" required>
-                                
-                            </div>
-                            <div class="form-group">
-				                <label for="rol">Tipo de Rol</label>
-				                <select name="rol" id="rol" required>
+				                <label for="raza">Tipo de Rol</label>
+				                <select name="raza" id="raza" required>
         			                <?php
-					                $miConexion->consulta('SELECT rol_id , nombre FROM rol');
-					                $miConexion->verRoles();
+					                $miConexion->consulta('SELECT raza_id , tipo FROM razas');
+					                $miConexion->verRazas();
         			                ?>
       			                </select>
 				
 			                </div>
                             <br>
                             <div class="form-group">
-                                <label for="cedula">Cédula:</label><br>
-                                <input type="number" name="cedula" id="cedula" class="form-control" value="<?php echo $usuario['cedula'];?>" required>
-                            
-                                <input type="hidden" name="accion" value="editar_registro">
-                                <input type="hidden" name="id" value="<?php echo $id;?>">
+                                <input type="hidden" name="accion" value="editar_mascota">
+                                <input type="hidden" name="idMascota" value="<?php echo $idMascota;?>">
                             </div>
                       
                         
@@ -89,7 +81,7 @@ error_reporting(0);
                                 <div class="mb-3">
                                     
                                 <button type="submit" class="btn btn-success" >Editar</button>
-                               <a href="lista_users.php" class="btn btn-danger">Cancelar</a>
+                               <a href="lista_mascotas.php" class="btn btn-danger">Cancelar</a>
                                
                             </div>
                             </div>

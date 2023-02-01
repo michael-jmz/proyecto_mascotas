@@ -10,10 +10,10 @@
             <a class="nav-link active" aria-current="page" href="../views/lista_users.php">Usuarios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mascotas</a>
+            <a class="nav-link" href="../views/lista_mascotas.php">Mascotas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Añadir raza</a>
+            <a class="nav-link" href="../views/lista_razas.php">Añadir raza</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
@@ -22,3 +22,4 @@
       </div>
     </div>
   </nav>
+  <br>
