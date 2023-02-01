@@ -9,4 +9,6 @@
 
 <link rel="stylesheet" href="../css/admin//styles.css">
 <link rel="stylesheet" href="../css/admin/es.css">
+<link rel="icon" href="../img/logo.png" sizes="32x32" />
+<title>Pets</title>
 </head>

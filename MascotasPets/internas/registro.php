@@ -12,7 +12,7 @@
 			<div>
             <h2 class="colorPlomo">Crear una cuenta</h2>
 
-            <form  class="formRegistro" method="post" action="login.php">
+            <form  class="formRegistro" method="post" action="guardar_usuario.php">
 
 				<div class="grupoinputRegistrar colorPerla">
 					<label for="">Nombres</label> 
@@ -31,10 +31,6 @@
 					<label for="password">Constraseña</label> 
 					<input id="password"type="password" name="password" placeholder="Ingrese su constraseña"required>
 				</div>
-				<div class="grupoinputRegistrar colorPerla">
-					<label for="newPassword">Repita la contraseña</label>
-					<input type="password" placeholder="Repita la contraseña" name="newpassword" required>
-				</div>
 				
 				<div class="grupoinputRegistrar colorPerla">
 					<label for="direccion">Dirección</label> 
@@ -43,13 +39,11 @@
 				<div class="grupoinputRegistrar colorPerla">
 					<label for="cedula">Cédula</label> 
 					<input id="cedula"type="number" name="cedula" placeholder="Ingrese su cedula"required>
-					<label for="telefono">Teléfono</label> 
-					<input id="telefono"type="number" name="telefono" placeholder="Ingrese su cedula"required>
 				</div>
 			
 			
 			<div class="inferior">
-				<button class ="btnRegistrar"type="submit">Registrarme</button>
+				<button class ="btnRegistrar"type="submit" value="Guardar">Registrarme</button>
 				<button class ="btnCrearCuenta"type="submit">Ya tengo cuenta</button>
 			</div>
 			
