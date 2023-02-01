@@ -8,13 +8,16 @@
                 <div >
                     <ul>
                         <li class="caja">
-                            a
+                            <h4>Mascotas rescatadas</h4>
+                            <h5>83</h5>
                         </li>
                         <li class="caja">
-                            a
+                            <h4>mascotas adoptadas</h4>
+                            <h5>13</h5>
                         </li>
                         <li class="caja">
-                           a 
+                           <h4>Mascotas Disponibles</h4>
+                           <h5>60</h5>
                         </li>
                     </ul>
                 </div>
@@ -65,33 +68,53 @@
                 <div class="carusel">
                     <div class="mascota">
                         <img src="../img/wallpaperbetter (1).jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                     <div class="mascota">
                         <img src="../img/wallpaperbetter (4).jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                     <div class="mascota">
                         <img src="../img/wallpaperbetter (3).jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                     <div class="mascota">
                         <img src="../img/wallpaperbetter.jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                     <div class="mascota">
                         <img src="../img/wallpaperbetter.jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                     <div class="mascota">
                         <img src="../img/wallpaperbetter (1).jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                     <div class="mascota">
                         <img src="../img/wallpaperbetter (4).jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                     <div class="mascota">
                         <img src="../img/wallpaperbetter (3).jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                     <div class="mascota">
                         <img src="../img/wallpaperbetter.jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                     <div class="mascota">
                         <img src="../img/wallpaperbetter.jpg" alt="">
+                        <a href="mascotas.php"><button  class="boton">mas informacion</button>
+                        </a>
                     </div>
                 </div>
             </div>

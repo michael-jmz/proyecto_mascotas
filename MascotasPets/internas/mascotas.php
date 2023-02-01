@@ -6,14 +6,10 @@ include "./header.php";
 
 
 <body class="principal-mascota">
-    <div class="titulo">
-        <img src="../img/adornomascota.png" alt="">
-        <h1> Adopciones</h1>
-        <img src="../img/adornomascota.png" alt="">
-    </div>
+  
     <div class="mascotas-adopcion">
     <div class="contenedor-titulo-controles">
-        <h3>mascotas en adopcion</h3>
+        <h3>Tu Futura mascota</h3>
         <div class="indicadores">
             <button></button>
             <button></button>
