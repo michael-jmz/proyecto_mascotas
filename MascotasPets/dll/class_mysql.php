@@ -285,6 +285,54 @@ class class_mysqli{
 		echo "</table>";
 
 	}
+	function verListaPostulacion(){
+		echo "<table class='table table-striped table-dark' id='table_id'>";
+		echo "<thead>";
+		echo "<tr>";
+		//la primera fila de nuestra tabla
+		for ($i=0; $i< $this->numCampos(); $i++){
+			echo "<th>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</th>";
+		}
+		echo "<th>Acciones</th>";
+		echo "</tr>";
+		echo "</thead>";
+		//sacamos todo el registro
+		echo "<tbody>";
+		while ($row=mysqli_fetch_array($this->Consulta_ID)){
+			echo "<tr>";
+			for ($i=0; $i<$this->numCampos(); $i++){
+				echo "<td>".$row[$i]."</td>";
+			}
+			echo "<td>";
+			echo "<a class='btn btn-danger' title='Eliminar' href='eliminar_postulacion.php?idRaza=$row[0]'><i class='fa fa-trash' ></i></a>";
+			echo "</td>";
+			
+			echo "</tr>";
+			}
+		echo "</tbody>";
+		echo "</table>";
+		
+	}
+	function verCardsPostulaciones(){
+		echo "<div class='container mt-3'>";
+		echo "<div class='row'>";
+		//echo "<option selected disabled=''>Seleccione Rol:</option>";
+		while ($row=mysqli_fetch_array($this->Consulta_ID)){
+			echo "<div class='col-lg-4 col-md-6 col-sm-12'>";
+				echo "<div class='card'>";
+					echo"<img src='../img/.$row[3].' class='card-img-top' alt='...'>";
+					echo "<div class='card-body'>";
+					echo "<h5 class='card-title'>".$row[1]."</h5>";
+					echo "<p class='card-text'>".$row[2]."</p>";
+					echo "<p class='card-text'>".$row[4]."</p>";
+					echo "<h5 class='card-title'>".$row[5]."</h5>";
+					echo "<a class='btn btn-danger' title='Eliminar' href='eliminar_postulacion.php?idMascota=$row[0]'><i class='fa fa-trash' ></i></a>";
+					echo "</div>";
+				echo "</div>";
+			echo "</div>";
+		}     
+	}
+
 }
 	
 ?>

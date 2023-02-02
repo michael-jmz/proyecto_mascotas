@@ -24,5 +24,7 @@
                                     FROM personal INNER JOIN mascota_personal ON personal.persona_id= mascota_personal.persona_id
 									INNER JOIN mascotas ON mascota_personal.mascota_id= mascotas.mascota_id");
 	$miConexion->verListaPostulaciones();
+
+    //SELECT personal.nombre,personal.apellido, mascotas.nombre,estados.estado FROM personal INNER JOIN postulaciones ON personal.persona_id= postulaciones.persona_id INNER JOIN mascotas ON postulaciones.mascota_id= mascotas.mascota_id INNER JOIN estados ON postulaciones.estado_id = estados.estado_id;
     ?>
 	

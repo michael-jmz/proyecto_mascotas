@@ -1,17 +1,11 @@
 <?php
-
-
 session_start();
 error_reporting(0);
-	$varsesion = $_SESSION['correo'];
-
+	$varsesion = $_SESSION['persona_id'];
 	if($varsesion== null || $varsesion= ''){
-
 	    header("Location: ../internas/ingreso.php");
 		die();
 	}
-  
-
 ?>
 
 
@@ -22,8 +16,8 @@ error_reporting(0);
     include ("../includes/header_interno.php");
     include ("../includes/menu_interno.php") ;
 
-    include ("../dll/conexion.php"); // incluidos el archivo de conexion para poder conectarnos a la db
-    include ("../dll/class_mysql.php"); // incluidos el archivo de conexion para poder conectarnos a la db
+    require_once ("../dll/conexion.php"); // incluidos el archivo de conexion para poder conectarnos a la db
+    require_once ("../dll/class_mysql.php"); // incluidos el archivo de conexion para poder conectarnos a la db
     
     $miConexion= new class_mysqli();
     $miConexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);

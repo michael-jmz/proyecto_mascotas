@@ -39,7 +39,7 @@ $sentencia="INSERT INTO personal VALUES ('','$nombre','$apellido','$correo','$pa
 $miConexion->consulta($sentencia);
 $miConexion->consulta('SELECT max(persona_id) FROM personal');
 $lista=$miConexion->consulta_lista();
-echo "INSERT INTO mascota_personal VALUES('','$id_mascota','$lista[0]')";
+//echo "INSERT INTO mascota_personal VALUES('','$id_mascota','$lista[0]')";
 $miConexion->consulta("INSERT INTO mascota_personal VALUES('','$id_mascota','$lista[0]')");
 
 $resSQL=$miConexion->consulta ($sentencia);

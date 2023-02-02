@@ -3,7 +3,7 @@
 
 session_start();
 error_reporting(0);
-	$varsesion = $_SESSION['correo'];
+	$varsesion = $_SESSION['persona_id'];
 
 	if($varsesion== null || $varsesion= ''){
 

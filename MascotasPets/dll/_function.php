@@ -37,6 +37,9 @@ if (isset($_POST['accion'])){
             case 'eliminar_raza':
                 eliminar_raza();
                 break;
+            case 'eliminar_postulacion':
+                eliminar_postulacion();
+                break;
 
 
         }
@@ -75,24 +78,32 @@ function acceso_user() {
         $usuario=$_POST['usuario'];
         $password=$_POST['password'];
         session_start();
-        $_SESSION['correo']=$usuario;
-        
-
     //$conexion=mysqli_connect("localhost","root","","r_user");
     
-    $sentencia= "SELECT correo, nombre password FROM personal WHERE correo='$usuario' AND password='$password'";
+    $sentencia= "SELECT *  FROM personal WHERE correo='$usuario' AND password='$password'";
     $miConexion->consulta($sentencia);
     //$resultado=mysqli_query($conexion, $consulta);
     //$filas=mysqli_num_rows($resultado);
-    $resSQL=$miConexion->consulta ($sentencia);
-    if ($resSQL=""){
+    $resultado=$miConexion->consulta ($sentencia);
+    $resSQL=mysqli_fetch_array($resultado);
+    
+        //Rol ADMINISTRADOR
+    if ($resSQL['rol_id']==1){ 
+        $idUser=$resSQL['persona_id'];
+        $_SESSION['persona_id']=$idUser;
+         header('Location: ../views/lista_users.php');
+
+       //ROL USARIARIO NORMAL Staff
+    }else if ($resSQL['rol_id'] ==2) {
+        $idUser=$resSQL['persona_id'];
+        $_SESSION['persona_id']=$idUser;
+        header("Location: ../views/cards_postulaciones.php");
+
+
+    }else{ 
         echo "problemas de ejecucion";
         header('Location: ../internas/ingreso.php');
         session_destroy();
-    }else{ 
-       // echo '<script> alert ("Postulación exitosa...");</script>';
-        //echo "<script> location.href='../views/lista_user.php'</script>";
-        header('Location: ../views/lista_users.php');
 
     }
 }
@@ -138,6 +149,16 @@ function acceso_user() {
     $sentencia= "DELETE FROM razas WHERE raza_id= $id";
     $miConexion->consulta($sentencia);
     header('Location: ../views/lista_razas.php');
+ }
+
+ function eliminar_postulacion(){
+    global $miConexion;
+    extract($_POST);
+    $id= $_POST['idPostulacion'];
+    $sentencia= "DELETE FROM postulaciones WHERE postulaciones_id= $id";
+    $miConexion->consulta($sentencia);
+    header('Location: ../views/cards_postulaciones.php');
+
  }
 
 ?>
