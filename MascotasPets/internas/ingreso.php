@@ -32,7 +32,7 @@
                 
                     <hr class="separador"></hr><br>
                     <div class="inferior"> 
-                    <button  class="btnCrearCuenta" type="submit" title="Ingresar" name="Ingresar">Crear Cuenta</button>
+                    <a href="registro.php"><button class="btnCrearCuenta" title="Ingresar" name="Ingresar"> Crear una cuenta </button></a>
                     </div>
             </div>
         </div>    

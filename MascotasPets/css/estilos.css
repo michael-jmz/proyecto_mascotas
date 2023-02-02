@@ -507,7 +507,7 @@ input {
 
 .mascotas-adopcion .contenedor-principal .contenedor-carusel .carusel .modelo-mascota .descripcion p{
 
-    width: 100%;
+  width: 100%;
   padding: 20px;
    
     justify-content: center;
@@ -528,6 +528,146 @@ input {
 
 
 }
+/*--------------------------------------*/
+/*             Formulario inicio sesion */
+/*--------------------------------------*/
+.inferior {
+  text-align: center;
+}
+
+/*A todos las clases que tengan un input y dentro haya el atributo required
+tomamos la etique label, pero no directamente sino el seudoselector after*/
+.grupoinputLogin:has(input:required, select:required) label:after {
+  content: "*";
+  color: red;
+}
+.grupoinputLogin label {
+    font-size: 1em;
+  }
+.grupoinputLogin input[type="text"],input[type="password"] {
+    width: 90%;
+    padding: 15px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .btnRecuperarPassword {
+      text-decoration: none;
+
+  }
+  /*crea una linea horzontal*/
+  .separador {
+    color: #768190;
+    size: 2px;
+  }
+
+/*--------------------------------------*/
+/*             Formulario Registrar */
+/*--------------------------------------*/
+.grupoinputRegistrar{
+    margin-left: 100px;
+}
+
+.grupoinputRegistrar:has(input:required, select:required) label:after {
+    content: "*";
+    color: red;
+
+}
+.grupoinputRegistrar label {
+    font-size: 1em;
+    width:100%;
+}
+.formRegistro .grupoinputRegistrar input[type="text"],input[type="password"], input[type="mail"]{
+    width: 85%;
+    padding: 5px 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.grupoinputRegistrar input[type="number"]{
+    padding: 5px 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+
+/*--------------------------------------*/
+/*             Botones Login            */
+/*--------------------------------------*/
+
+.btnLogin {
+  background-color: #0b232f; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: center;
+
+}
+.btnLogin:hover {
+  background-color: #183543;
+  color: white;
+}
+.btnCrearCuenta{
+    min-width:30px;
+    background-color: white; /* Green */
+    border: 2px solid #F26CA7;
+    color:#0b232f;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+.btnCrearCuenta:hover {
+    background-color: #F26CA7;
+    color: white;
+}
+.btnRegistrar{
+
+    background-color: #0b232f; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+.btnRegistrar:hover {
+    background-color: #183543;
+    color: white;
+  }
+
+/*--------------------------------------*/
+/*             Personalizados           */
+/*--------------------------------------*/
+.colorBlanco {
+  color: #fff;
+}
+.colorPerla {
+  color: #0b232f;
+}
+.colorPlomo {
+  color: #768190;
 
 
 

@@ -1,8 +1,22 @@
+<?php
+                                                session_start();
+                                                error_reporting(0);
+                                        	$varsesion = $_SESSION['persona_id'];
+
+                                        	if($varsesion== null || $varsesion= ''){
+
+	                                                header("Location: ingreso.php");
+		                                        die();//destruye la sesion
+	                                        }
+                                                ?>
 <?php 
 
 include "./header.php";
 
+
 ?>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 
 
 <body class="principal-mascota">
@@ -31,8 +45,15 @@ include "./header.php";
                                                     <P>Our team was inspired by the seven skills of highly effective programmers created by the TechLead. We wanted to provide our own take on the topic...</P>
 
                                             </div>
+                                            
+                                            <div class="text-center">
+                                                <a class="btn btn-success btn- " href="nuevo_usuario.php">Adoptar</i></a>
+	                                </div>
+                                        
+
 
                                     </li>
+                                    
                                     < <li class="modelo-mascota">
                                             <div class=" imagen">
 

@@ -12,7 +12,7 @@
 			<div>
             <h2 class="colorPlomo">Crear una cuenta</h2>
 
-            <form  class="formRegistro" method="post" action="guardar_usuario.php">
+            <form  class="formRegistro" method="post" action="../views/guardar_usuario.php">
 
 				<div class="grupoinputRegistrar colorPerla">
 					<label for="">Nombres</label> 
@@ -40,14 +40,11 @@
 					<label for="cedula">Cédula</label> 
 					<input id="cedula"type="number" name="cedula" placeholder="Ingrese su cedula"required>
 				</div>
-			
-			
-			<div class="inferior">
-				<button class ="btnRegistrar"type="submit" value="Guardar">Registrarme</button>
-				<button class ="btnCrearCuenta"type="submit">Ya tengo cuenta</button>
-			</div>
-			
 		</form>     
+		<div class="inferior">
+				<button class ="btnRegistrar"type="submit" value="Guardar" name="registrar">Registrarme</button>
+				<a href="ingreso.php"><button class ="btnCrearCuenta">Ya tengo cuenta</button></a>
+			</div>
         </div> 
 	</div>   
     </body>

@@ -2,11 +2,6 @@
     
 	include ("../includes/header_interno.php");
 	include ("../includes/menu_interno.php") ;
-	include ("../dll/conexion.php"); // incluidos el archivo de conexion para poder conectarnos a la db
-	include ("../dll/class_mysql.php"); // incluidos el archivo de conexion para poder conectarnos a la db
-	$miConexion= new class_mysqli();
-	$miConexion->conectar (DBHOST, DBUSER, DBPASS, DBNAME);
-
 ?>
     
 
