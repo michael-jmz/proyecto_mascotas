@@ -657,6 +657,71 @@ tomamos la etique label, pero no directamente sino el seudoselector after*/
     color: white;
   }
 
+
+/*--------------------------------------*/
+/*               Nosotros               */
+/*--------------------------------------*/
+.container-all1{
+  text-align: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 60px;
+  margin-top: 100px;
+  
+}
+
+.container-all2{
+  text-align: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 60px;
+  margin-top: 10px;
+  
+}
+.container-all3{
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px;
+  margin-top: 10px;
+  
+}
+.sub-title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.imgNosotros img{
+  width: 600px;
+  float: left;
+  margin-right: 60px;
+  margin-bottom: 40px;
+}
+
+.container-all1 p{
+  
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.container-all2 p{
+  
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+.container-all3 p{
+  
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
 /*--------------------------------------*/
 /*             Personalizados           */
 /*--------------------------------------*/
@@ -668,6 +733,7 @@ tomamos la etique label, pero no directamente sino el seudoselector after*/
 }
 .colorPlomo {
   color: #768190;
+
 
 
 
