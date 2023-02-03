@@ -320,7 +320,7 @@ class class_mysqli{
 		while ($row=mysqli_fetch_array($this->Consulta_ID)){
 			echo "<div class='col-lg-4 col-md-6 col-sm-12'>";
 				echo "<div class='card'>";
-					echo"<img src='../img/.$row[3].' class='card-img-top' alt='...'>";
+					echo"<img src='../img/$row[3]' class='card-img-top' alt='...'>";
 					echo "<div class='card-body'>";
 					echo "<h5 class='card-title'>".$row[1]."</h5>";
 					echo "<p class='card-text'>".$row[2]."</p>";
@@ -330,7 +330,29 @@ class class_mysqli{
 					echo "</div>";
 				echo "</div>";
 			echo "</div>";
-		}     
+		}  
+	}
+	function verCardsMascotas(){
+		
+		echo "<div class='row row-cols-1 row-cols-md-4 g-4'>";
+		//echo "<option selected disabled=''>Seleccione Rol:</option>";
+		while ($row=mysqli_fetch_array($this->Consulta_ID)){
+			
+				echo "<div class='col'>";
+					echo "<div class='card h-100 border-secondary'>";
+						echo"<img src='../img/$row[3]' class='card-img-top' alt=''>";
+						echo "<div class='card-body'>";
+						echo "<h5 class='card-title'>".$row[1]."</h5>";
+						echo "<h5 class='card-title'>Raza: ".$row[7]."</h5>";
+						echo "<p class='card-text'>".$row[2]."</p>";
+						echo "<p class='card-text'>Edad:".$row[4]."</p>";
+						echo "<a class='btn btn-primary' title='postular' href='../views/guardar_postualcion_card.php?idMascota=$row[0]'>Postular</a>";
+						echo "</div>";
+				echo "</div>";
+			echo "</div>";	
+		}
+		echo "</div>";
+
 	}
 
 }

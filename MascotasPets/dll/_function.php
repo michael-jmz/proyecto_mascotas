@@ -151,6 +151,9 @@ function acceso_user() {
     header('Location: ../views/lista_razas.php');
  }
 
+ //============================ CRUD POSTULACIONES ==================================
+ 
+
  function eliminar_postulacion(){
     global $miConexion;
     extract($_POST);

@@ -12,6 +12,7 @@ error_reporting(0);
 <!DOCTYPE html>
 <?php 
 include ("../includes/header_interno.php");
+include ("../includes/menu_perfil_user.php");
 include ("../dll/conexion.php"); // incluidos el archivo de conexion para poder conectarnos a la db
 include ("../dll/class_mysql.php"); // incluidos el archivo de conexion para poder conectarnos a la db
     $idUser=$_SESSION['persona_id'];
@@ -25,7 +26,10 @@ include ("../dll/class_mysql.php"); // incluidos el archivo de conexion para pod
 
 ?>
 <div class="container is-fluid">
-    <div class="col-xs-12"> 
+    <div class="col-xs-12">
+    <a class="btn btn-success" href="../internas/Principal.php"><i class="fa-regular fa-left"></i>Regresar</a>
+
+         
         <div class="row">
             <h2>Bievenid@ <?php echo utf8_decode($usuario ['nombre']); ?></h2>
             <div class="col">

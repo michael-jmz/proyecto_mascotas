@@ -1,14 +1,13 @@
 <?php
-                                                session_start();
-                                                error_reporting(0);
-                                        	$varsesion = $_SESSION['persona_id'];
+        session_start();
+        error_reporting(0);
+        $varsesion = $_SESSION['persona_id'];
+        if($varsesion== null || $varsesion= ''){
 
-                                        	if($varsesion== null || $varsesion= ''){
-
-	                                                header("Location: ingreso.php");
-		                                        die();//destruye la sesion
-	                                        }
-                                                ?>
+	header("Location: ingreso.php");
+	die();//destruye la sesion
+	}
+        ?>
 <?php 
 
 include "./header.php";

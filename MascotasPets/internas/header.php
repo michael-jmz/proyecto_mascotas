@@ -31,8 +31,8 @@
             <section class="Menuderecho">
                 <a href="Principal.php">Inicio</a>
                 <a href="#">Proyecto</a>
-                <a href="postulaciones.php">Adopta</a>
-                <a href="listadoPostulacion.php">Registro Postulacion</a>
+                <a href="cards_mascotas.php">Mascotas</a>
+                <a href="../views/cards_postulaciones.php">Mis Postulaciones</a>
                 <a href="nosotros.php">Nosotros</a>
                 
             </section>
