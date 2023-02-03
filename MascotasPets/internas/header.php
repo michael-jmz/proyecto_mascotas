@@ -30,7 +30,7 @@
 
             <section class="Menuderecho">
                 <a href="Principal.php">Inicio</a>
-                <a href="#">Proyecto</a>
+                <a href="proyectos.php">Proyecto</a>
                 <a href="cards_mascotas.php">Mascotas</a>
                 <a href="../views/cards_postulaciones.php">Mis Postulaciones</a>
                 <a href="nosotros.php">Nosotros</a>

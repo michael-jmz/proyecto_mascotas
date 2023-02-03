@@ -715,12 +715,65 @@ tomamos la etique label, pero no directamente sino el seudoselector after*/
   font-weight: 300;
   margin-top: 30px;
 }
-.container-all3 p{
+
+/*--------------------------------------*/
+/*               Proyecto             */
+/*--------------------------------------*/
+
+.proyecto1{
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 150px;
+  margin-top: 10px;
+  
+}
+
+.proyecto2{
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 300px;
+  margin-top: 50px;
+  
+}
+
+.subtitulo{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.imgProyecto1 img{
+  width: 700px;
+  float: left;
+  margin-right: 60px;
+  margin-bottom: 40px;
+}
+
+.imgProyecto2 img{
+  width: 700px;
+  float: right;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
+.proyecto1 p{
   
   font-size: 18px;
   font-weight: 300;
   margin-top: 30px;
 }
+
+.proyecto2 p{
+  
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
 
 /*--------------------------------------*/
 /*             Personalizados           */
