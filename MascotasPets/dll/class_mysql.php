@@ -352,6 +352,7 @@ class class_mysqli{
 			echo "</div>";	
 		}
 		echo "</div>";
+		
 
 	}
 
