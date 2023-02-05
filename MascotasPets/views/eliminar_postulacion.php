@@ -31,7 +31,7 @@ include ("../includes/menu_interno.php") ;
                 <input type="hidden" name="accion" value="eliminar_postulacion">
                 <input type="hidden" name="idPostulacion" value="<?php echo $_GET['idMascota']; ?>">
                 <input type="submit" name="" value="Eliminar" class= " btn btn-danger">
-                <a href="lista_razas.php" class="btn btn-success">Cancelar</a>
+                <a href="cards_postulaciones.php" class="btn btn-success">Cancelar</a>
 
                                
         </div>

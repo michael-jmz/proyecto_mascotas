@@ -1,6 +1,6 @@
 <?php include "./header.php"; ?>
     
-    <body>
+    <body class="principal">
         
         <div id="contenedor">
             <div class="formulario ">
@@ -35,9 +35,12 @@
                     <a href="registro.php"><button class="btnCrearCuenta" title="Ingresar" name="Ingresar"> Crear una cuenta </button></a>
                     </div>
             </div>
-        </div>    
+        </div>
+</div>
+            
     </body>
     <?php
+
     
 	require_once "./footer.php";
 

@@ -27,6 +27,12 @@
 										<br>
 										<input class="form-control" id="edad"type="text" name="edad" placeholder="Ingrese su edad "required>
 									</div>
+									<div class="form-group">
+										<label class="form-label" for="imagen">Imagen</label> 
+										<br>
+										<input class="form-control" id="imagen"type="file" name="selImg" required onClick ="actualizarImg">
+									</div>
+
                                     <br>
                                     <p>Estado de mascota (Habilitada/Deshabilitada)</p>
                                     <div class="form-check">
@@ -59,5 +65,9 @@
         		</div>
     		</div>							
 		</form>
+		<img src="../imgs/<?php echo $fila['imagen']; ?>" onerror=this.src="../imgs/noimage.png" width="50" heigth="70">
+
 		
 </body>
+<script src="../scripts/actualizarImg.js"></script>
+

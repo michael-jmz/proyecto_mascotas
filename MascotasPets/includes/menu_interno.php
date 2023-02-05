@@ -16,6 +16,9 @@
             <a class="nav-link" href="../views/lista_razas.php">Añadir raza</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="../views/lista_postulaciones.php">Ver Postulaciones</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>

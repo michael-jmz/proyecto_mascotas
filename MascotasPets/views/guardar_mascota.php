@@ -20,10 +20,12 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 
 $nombre=$_POST['nombres'];//debemos extraer una a uno por seguridad
 $edad=$_POST['edad'];
+$descripcion="";
+$imagen=$_POST['selImg'];
 $estado=$_POST['estado'];
 $raza=$_POST['raza'];
 
-$sentencia="INSERT INTO mascotas VALUES ('','$nombre','$edad','$estado','$raza')";
+$sentencia="INSERT INTO mascotas VALUES ('','$nombre','$descripcion', '$imagen', '$edad','$estado','$raza')";
 $resSQL=$miConexion->consulta($sentencia);
 
 if ($resSQL==""){

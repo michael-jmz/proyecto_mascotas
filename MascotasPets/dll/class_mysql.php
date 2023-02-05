@@ -191,6 +191,8 @@ class class_mysqli{
 			echo "<a class='btn btn-warning' title='Editar' href='editar_user.php?id=$row[0]'><i class='fa fa-edit' ></i></a>";
 			echo "&nbsp;";
 			echo "<a class='btn btn-danger' title='Eliminar' href='eliminar_user.php?id=$row[0]'><i class='fa fa-trash' ></i></a>";
+			echo "&nbsp;";
+			echo "<a class='btn btn-info' title='Ver' href='ver_lista_postulaciones.php?id=$row[0]'><i class='fa-sharp fa-solid fa-eye'></i>Ver Postulaciones</a>";
 			echo "</td>";
 			
 			echo "</tr>";
@@ -304,7 +306,7 @@ class class_mysqli{
 				echo "<td>".$row[$i]."</td>";
 			}
 			echo "<td>";
-			echo "<a class='btn btn-danger' title='Eliminar' href='eliminar_postulacion.php?idRaza=$row[0]'><i class='fa fa-trash' ></i></a>";
+			echo "<a class='btn btn-danger' title='Eliminar' href='eliminar_postulacion.php?idPostulacion=$row[0]'><i class='fa fa-trash' ></i></a>";
 			echo "</td>";
 			
 			echo "</tr>";
@@ -324,7 +326,7 @@ class class_mysqli{
 					echo "<div class='card-body'>";
 					echo "<h5 class='card-title'>".$row[1]."</h5>";
 					echo "<p class='card-text'>".$row[2]."</p>";
-					echo "<p class='card-text'>".$row[4]."</p>";
+					echo "<h5 class='card-title'><i class='fa-solid fa-calendar-days'></i> Fecha: ".$row[4]."</h5>";
 					echo "<h5 class='card-title'>".$row[5]."</h5>";
 					echo "<a class='btn btn-danger' title='Eliminar' href='eliminar_postulacion.php?idMascota=$row[0]'><i class='fa fa-trash' ></i></a>";
 					echo "</div>";
@@ -340,7 +342,7 @@ class class_mysqli{
 			
 				echo "<div class='col'>";
 					echo "<div class='card h-100 border-secondary'>";
-						echo"<img src='../img/$row[3]' class='card-img-top' alt=''>";
+						echo"<img src='../img/$row[3]'class='card-img-top' alt='' onerror=this.src='../img/noImage.jpg'>";
 						echo "<div class='card-body'>";
 						echo "<h5 class='card-title'>".$row[1]."</h5>";
 						echo "<h5 class='card-title'>Raza: ".$row[7]."</h5>";

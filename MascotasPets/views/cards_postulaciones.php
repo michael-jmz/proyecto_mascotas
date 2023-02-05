@@ -27,7 +27,7 @@ include ("../dll/class_mysql.php"); // incluidos el archivo de conexion para pod
 ?>
 <div class="container is-fluid">
     <div class="col-xs-12">
-    <a class="btn btn-success" href="../internas/Principal.php"><i class="fa-regular fa-left"></i>Regresar</a>
+    <a class="btn btn-success" href="../internas/cards_mascotas.php"><i class="fa-regular fa-left"></i>Seguir Postulando</a>
 
          
         <div class="row">
