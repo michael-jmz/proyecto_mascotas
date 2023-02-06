@@ -39,12 +39,13 @@
 				<div class="grupoinputRegistrar colorPerla">
 					<label for="cedula">Cédula</label> 
 					<input id="cedula"type="number" name="cedula" placeholder="Ingrese su cedula"required>
-				</div>
-		</form>     
-		<div class="inferior">
+				</div>   
+				<div class="inferior">
 				<button class ="btnRegistrar"type="submit" value="Guardar" name="registrar">Registrarme</button>
 				<a href="ingreso.php"><button class ="btnCrearCuenta">Ya tengo cuenta</button></a>
-			</div>
+
+				</div>
+			</form>  
         </div> 
 	</div>   
     </body>

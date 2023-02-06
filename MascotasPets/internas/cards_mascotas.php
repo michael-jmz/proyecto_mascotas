@@ -7,13 +7,13 @@ include ("../dll/class_mysql.php"); // incluidos el archivo de conexion para pod
     $miConexion->conectar (DBHOST, DBUSER, DBPASS, DBNAME);
     //CAPTURA DATOS DE USUARIO PARA CREAR UN PERFIL
 ?>
-<!DOCTYPE html>
 
+<header>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </header>
 <body class="principal">
-    <br><br>
-    <div class="">
+    <br>
+    <div class="contenedor_mascotas">
     
 <?php
 	$miConexion->consulta("SELECT 	

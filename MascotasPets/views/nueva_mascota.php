@@ -57,7 +57,7 @@
 							        <div class="mb-3">
                                     
                                			<input type="submit" value="Guardar"class="btn btn-success" name="registrar">
-                               			<a href="lista_users.php" class="btn btn-danger">Cancelar</a>
+                               			<a href="lista_mascotas.php" class="btn btn-danger">Cancelar</a>
                             		</div>
                         	</div>
                 		</div>

@@ -17,6 +17,7 @@ include ("../includes/header_interno.php");
 include ("../includes/menu_interno.php") ;
 ?>
 <body>
+
     
     <div class="container mt-5">
     <div class="row">
@@ -40,4 +41,5 @@ include ("../includes/menu_interno.php") ;
 
 
 </body>
+
 </html>

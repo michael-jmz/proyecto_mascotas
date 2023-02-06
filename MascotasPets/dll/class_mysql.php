@@ -305,9 +305,9 @@ class class_mysqli{
 			for ($i=0; $i<$this->numCampos(); $i++){
 				echo "<td>".$row[$i]."</td>";
 			}
-			echo "<td>";
-			echo "<a class='btn btn-danger' title='Eliminar' href='eliminar_postulacion.php?idPostulacion=$row[0]'><i class='fa fa-trash' ></i></a>";
-			echo "</td>";
+			//echo "<td>";
+			//echo "<a class='btn btn-danger' title='Eliminar' href='eliminar_postulacion.php?idPostulacion=$row[0]'><i class='fa fa-trash' ></i></a>";
+			//echo "</td>";
 			
 			echo "</tr>";
 			}

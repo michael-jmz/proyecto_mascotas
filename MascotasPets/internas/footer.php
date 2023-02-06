@@ -5,6 +5,7 @@
         </div>
 
 		<h6 class="derechos">Derechos Reservados 2022 UTPL
+        &nbsp;&nbsp;
         <nav class="redesSociales">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>

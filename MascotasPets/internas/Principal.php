@@ -1,4 +1,18 @@
-<?php include "./header.php";?>
+<?php include "./header.php";
+ require_once ("../dll/conexion.php"); // incluidos el archivo de conexion para poder conectarnos a la db
+ require_once ("../dll/class_mysql.php"); // incluidos el archivo de conexion para poder conectarnos a la db
+    $miConexion= new class_mysqli();
+    $miConexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
+    $sentencia= "SELECT COUNT(*) as count FROM mascotas ";
+    $rescatadas=$miConexion->consulta($sentencia);
+    $mascotas = mysqli_fetch_assoc($rescatadas);
+// consulta mascotas disponibles 
+    $sentencia= "SELECT COUNT(*) as count FROM mascotas  WHERE mascotas.estado_mascota=1";
+    $disponibles=$miConexion->consulta($sentencia);
+    $mascotas_disponibles = mysqli_fetch_assoc($disponibles);
+
+ ?>
+
 
 
 
@@ -9,15 +23,15 @@
                     <ul>
                         <li class="caja">
                             <h4>Mascotas rescatadas</h4>
-                            <h5>83</h5>
+                            <h5><?php echo $mascotas['count'];?></h5>
                         </li>
                         <li class="caja">
                             <h4>mascotas adoptadas</h4>
-                            <h5>13</h5>
+                            <h5>5</h5>
                         </li>
                         <li class="caja">
                            <h4>Mascotas Disponibles</h4>
-                           <h5>60</h5>
+                           <h5><?php echo $mascotas_disponibles['count'];?></h5>
                         </li>
                     </ul>
                 </div>
